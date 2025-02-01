@@ -59,10 +59,7 @@ export default class Error extends Component {
         <div className="error-class">
           <h1 className="error-404">Page Not Found</h1>
           <h1 className="error-404">(404)</h1>
-          <img
-            src={`${process.env.PUBLIC_URL}images/pablo.jfif`}
-            alt="Not Found"
-          />
+          <img src="/images/pablo.jfif" alt="Not Found" />
           <a
             href="/?/home"
             className="main-button"
