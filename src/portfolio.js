@@ -29,7 +29,7 @@ const seo = {
     title: "Asi Greenholts",
     type: "website",
     url: settings.url,
-    image: `${settings.url}icons/preview.png`,
+    image: `${settings.url}icons/preview.jpg`,
     imageWidth: "1200",
     imageHeight: "640",
     locale: "en_US",
