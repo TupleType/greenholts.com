@@ -32,8 +32,32 @@
 #root {
   position: relative;
   min-height: 100vh;
-  padding-bottom: 150px;
+  padding-bottom: 8rem;
   /* Adjust this value based on your footer height */
+}
+
+@media (max-width: 1440px) {
+  #root {
+    padding-bottom: 7rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  #root {
+    padding-bottom: 6rem;
+  }
+}
+
+@media (max-width: 834px) {
+  #root {
+    padding-bottom: 7rem;
+  }
+}
+
+@media (max-width: 440px) {
+  #root {
+    padding-bottom: 11rem;
+  }
 }
 
 /* Animations */
