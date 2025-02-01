@@ -1,8 +1,8 @@
 ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 [![Made With React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
-[![Deploy to GitHub Pages](https://github.com/TupleType/greenholts.com/actions/workflows/deploy.yml/badge.svg)](https://github.com/TupleType/greenholts.com/actions/workflows/deploy.yml)
+![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=github&logoColor=white)
 ![License](https://img.shields.io/:license-mit-blue.svg?style=for-the-badge)
-[![Build Status](https://github.com/TupleType/greenholts.com/workflows/Build/badge.svg)](https://github.com/yourusername/your-repo-name/actions)
+[![Deploy to GitHub Pages](https://github.com/TupleType/greenholts.com/actions/workflows/deploy.yml/badge.svg)](https://github.com/TupleType/greenholts.com/actions/workflows/deploy.yml)
 
 # My Website
 
