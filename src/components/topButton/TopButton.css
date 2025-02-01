@@ -1,0 +1,44 @@
+#topButton {
+  visibility: hidden;
+  position: fixed;
+  bottom: 5rem;
+  right: 0.5rem;
+  cursor: pointer;
+  padding: 15px;
+  outline: none;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 440px) {
+  #topButton {
+    right: 1rem;
+    padding: 12px;
+    bottom: 4rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 834px) {
+  #topButton {
+    right: 1.5rem;
+    padding: 14px;
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  #topButton {
+    right: 2rem;
+    padding: 15px;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  #topButton {
+    right: 2.5rem;
+    padding: 16px;
+    font-size: 1.6rem;
+  }
+}

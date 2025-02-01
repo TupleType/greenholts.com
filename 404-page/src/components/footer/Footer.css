@@ -1,0 +1,127 @@
+.footer-main {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #f5f5f5;
+  margin-top: 6rem;
+  border-top: 1px solid #e9ecef;
+}
+
+.footer-div {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.footer-logo {
+  font-family: "Consolas";
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.footer-social {
+  margin: 0.5rem 0;
+  gap: 0.5rem;
+}
+
+.footer-text {
+  text-align: center;
+  font-weight: bold;
+  font-family: "Google Sans Regular";
+  margin: 0;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 1440px) {
+  .footer-div {
+    max-width: 85%;
+  }
+
+  .footer-main {
+    margin-top: 6rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer-div {
+    max-width: 95%;
+  }
+
+  .footer-logo {
+    font-size: 1.4em;
+  }
+
+  .footer-main {
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-top {
+    gap: 1rem;
+  }
+
+  .footer-content {
+    gap: 1rem;
+  }
+
+  .footer-logo {
+    font-size: 1.2em;
+  }
+
+  .footer-main {
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .footer-div {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 0;
+    gap: 1rem;
+  }
+
+  .footer-text {
+    position: static;
+    transform: none;
+  }
+
+  .footer-logo {
+    font-size: 1.1em;
+  }
+
+  .footer-main {
+    margin-top: 2rem;
+  }
+
+  .footer-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+  }
+}

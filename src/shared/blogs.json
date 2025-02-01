@@ -1,0 +1,58 @@
+{
+  "data": [
+    {
+      "id": "6",
+      "title": "The GitHub Actions Worm: Compromising GitHub Repositories Through the Actions Dependency Tree",
+      "description": "Learn how a novel attack vector in GitHub Actions allows attackers to distribute malware across repositories using a technique that exploits the actions dependency tree and puts countless open-source projects and internal repositories at risk. Get an in-depth look at the attack vectors, technical details and a real-world demo in this blog post highlighting our latest research.",
+      "date": "Sep 14, 2023",
+      "reading_time": "16 min read",
+      "thumbnail": "worm-thumbnail.png",
+      "link": "https://www.paloaltonetworks.com/blog/prisma-cloud/github-actions-worm-dependencies/"
+    },
+    {
+      "id": "5",
+      "title": "Abusing Repository Webhooks to Access Internal CI/CD Systems at Scale",
+      "description": "On the surface, repository webhooks seem secure. But we recently tested these webhooks to identify security issues and discovered that anyone on the internet can overcome the IP restriction, access data and execute code on internal CI/CD pipelines at scale.",
+      "date": "Jul 13, 2023",
+      "reading_time": "15 min read",
+      "thumbnail": "webhook-thumbnail.png",
+      "link": "https://www.paloaltonetworks.com/blog/prisma-cloud/repository-webhook-abuse-access-ci-cd-systems-at-scale/"
+    },
+    {
+      "id": "1",
+      "title": "How to secure your Open Source Project – A quick guide for developers",
+      "description": "This blog is designed to provide developers with a practical, straightforward guide to secure their open source (OS) projects. We’ll cover the most important aspects of securing OS projects, and provide practical guidelines using GitHub as the source control management system (SCM), and GitHub Actions as the CI/CD solution.",
+      "date": "Dec 8, 2022",
+      "reading_time": "9 min read",
+      "thumbnail": "secure-os-thumbnail.png",
+      "link": "https://web.archive.org/web/20230601060727/https://www.cidersecurity.io/blog/research/how-to-secure-your-open-source-project-a-quick-guide-for-developers/"
+    },
+    {
+      "id": "2",
+      "title": "Optimizing CI/CD Credential Hygiene – A Comparison of CI/CD Solutions",
+      "description": "Attackers are always on the lookout to gain access to credentials, which are a critical asset to protect and are widespread throughout the organization. This is highly relevant in CI/CD systems, which are a vital part of the engineering ecosystem.",
+      "date": "Jul 6, 2022",
+      "reading_time": "7 min read",
+      "thumbnail": "credentials-thumbnail.png",
+      "link": "https://web.archive.org/web/20230928082723/https://www.cidersecurity.io/blog/research/optimizing-ci-cd-credential-hygiene-a-comparison-of-ci-cd-solutions/"
+    },
+    {
+      "id": "3",
+      "title": "CI/CD Goat – A deliberately vulnerable CI/CD environment",
+      "description": "Today we are excited to announce the launch of “CI/CD Goat” – a deliberately vulnerable CI/CD environment which allows engineers, security practitioners, and curious hackers to learn and experience the major CI/CD security risks out there.",
+      "date": "Apr 7, 2022",
+      "reading_time": "3 min read",
+      "thumbnail": "cicd-goat-thumbnail.png",
+      "link": "https://web.archive.org/web/20230601062424/https://www.cidersecurity.io/blog/research/ci-cd-goat/"
+    },
+    {
+      "id": "4",
+      "title": "How to Secure Jenkins’ Default Build Authorization Configuration",
+      "description": "The default build authorization configuration in Jenkins — controlling the permissions allocated to pipelines — is insecure and is often left unmodified in production environments. To address this issue, you should use the “Authorize Project” and the “Role-Based Authorization Strategy” plugins to define secure build authorization configurations.",
+      "date": "Feb 17, 2022",
+      "reading_time": "11 min read",
+      "thumbnail": "jenkins-thumbnail.jpg",
+      "link": "https://www.paloaltonetworks.com/blog/prisma-cloud/secure-jenkins-default-build-authorization-configuration/"
+    }
+  ]
+}

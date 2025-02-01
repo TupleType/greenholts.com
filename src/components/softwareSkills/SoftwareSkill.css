@@ -1,0 +1,54 @@
+.dev-icons {
+  padding-left: 0;
+  list-style: none;
+  font-size: 3rem;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  text-align: left;
+}
+
+.software-skill-inline {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  font-family: "Google Sans Regular";
+}
+
+.software-skill-inline > i {
+  color: #868e96;
+}
+
+.software-skill-inline > i:hover {
+  color: #645beb;
+}
+
+.skill-image {
+  height: 48px;
+}
+
+@media (max-width: 1440px) {
+  .software-skill-inline {
+    margin-right: 18px;
+    margin-bottom: 18px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .software-skill-inline {
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 834px) {
+  .dev-icons {
+    text-align: center;
+  }
+}
+
+@media (max-width: 440px) {
+  .dev-icons {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+}

@@ -1,0 +1,140 @@
+.top-blog {
+  width: 100%;
+  margin: 0 0 40px 0;
+  box-sizing: border-box;
+}
+
+.top-blog-card {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  overflow: hidden;
+  height: auto;
+  max-height: 400px;
+}
+
+.top-blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.top-blog-image {
+  height: 100%;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.top-blog-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.top-blog-content {
+  padding: 20px;
+  margin-left: -20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top-blog-content h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.top-blog-meta {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.top-blog-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+@media (max-width: 1440px) {
+  .top-blog-content h3 {
+    font-size: 1.8rem;
+  }
+
+  .top-blog-description {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .top-blog-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+
+  .top-blog-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .top-blog-meta {
+    font-size: 1.05rem;
+    margin-bottom: 10px;
+  }
+
+  .top-blog-description {
+    font-size: 0.9rem;
+    line-height: 1.3;
+  }
+
+  .top-blog-image {
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 834px) {
+  .top-blog-card {
+    grid-template-columns: 1fr;
+    max-height: none;
+  }
+
+  .top-blog-content {
+    margin-left: 0px;
+    margin-top: -40px;
+  }
+
+  .top-blog-image {
+    height: 300px;
+  }
+}
+
+@media (max-width: 440px) {
+  .top-blog-image {
+    height: 200px;
+  }
+
+  .top-blog-content {
+    padding: 15px;
+    margin-left: 0px;
+    margin-top: -40px;
+  }
+
+  .top-blog-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .top-blog-meta {
+    font-size: 0.9rem;
+  }
+
+  .top-blog-description {
+    font-size: 0.85rem;
+    -webkit-line-clamp: 2;
+  }
+}

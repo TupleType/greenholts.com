@@ -1,0 +1,161 @@
+.main {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 4rem;
+}
+
+.greet-main {
+  width: 100%;
+  padding: 20px 10px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gretting-main {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+}
+
+.greeting-main {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.greeting-main > * {
+  flex: 1;
+  margin-bottom: 30px;
+}
+
+.greeting-text-div {
+  flex: 3;
+}
+
+.greeting-image-div {
+  flex: 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.button-greeting-div {
+  display: flex;
+  margin-top: 20px;
+}
+
+.greeting-text {
+  margin-top: 80px;
+  font-size: 70px;
+  line-height: 1.1;
+  font-family: "Google Sans Bold";
+}
+
+.greeting-text-p {
+  font-size: 40px;
+  line-height: 40px;
+  margin-right: 40px;
+  font-family: "Google Sans Medium";
+}
+
+.greeting-image-div > * {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media Query */
+@media (max-width: 1440px) {
+  .greeting-text {
+    font-size: 50px;
+  }
+
+  .greeting-text-p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 834px) {
+  .button-greeting-div {
+    justify-content: space-around;
+  }
+
+  .greeting-text {
+    font-size: 30px;
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  .greeting-text-p.subTitle {
+    font-size: 20px;
+    margin-right: 0px;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .greeting-main {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio-repo-btn-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .greet-main {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .greeting-image-div {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 440px) {
+  .greeting-image-div {
+    display: none;
+  }
+
+  .greeting-text-div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio-repo-btn-div {
+    margin-top: 0;
+  }
+
+  .greeting-text-p {
+    font-size: 30px;
+    line-height: 24px;
+  }
+
+  .greeting-text-p.subTitle {
+    font-size: 20px;
+    line-height: 34px;
+    margin-bottom: 0.9rem;
+  }
+
+  .social-media-div {
+    margin-bottom: 2rem;
+  }
+
+  .main-button {
+    margin: 0;
+  }
+
+  /* Increase specificity by using parent containers */
+  .greet-main .portfolio-repo-btn-div .main-button {
+    margin: 1rem;
+  }
+}

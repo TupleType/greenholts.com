@@ -1,0 +1,33 @@
+{
+  "data": [
+    {
+      "id": "R_kgDOHEnKog",
+      "name": "cicd-goat",
+      "createdAt": "2022-03-27T10:00:19Z",
+      "url": "https://github.com/cider-security-research/cicd-goat",
+      "description": "A deliberately vulnerable CI/CD environment. Learn CI/CD security through multiple challenges.",
+      "isFork": false,
+      "primaryLanguage": {
+        "name": "Python",
+        "color": "#3572A5"
+      },
+      "forkCount": 328,
+      "stargazers": {
+        "totalCount": 1992
+      }
+    },
+    {
+      "id": "R_kgDOMBJTRA",
+      "name": "awesome-cicd-attacks",
+      "createdAt": "2024-05-27T10:29:18Z",
+      "url": "https://github.com/TupleType/awesome-cicd-attacks",
+      "description": "Practical resources for offensive CI/CD security research. Curated the best resources I've seen since 2021.",
+      "isFork": false,
+      "primaryLanguage": null,
+      "forkCount": 42,
+      "stargazers": {
+        "totalCount": 503
+      }
+    }
+  ]
+}

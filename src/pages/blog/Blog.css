@@ -1,0 +1,39 @@
+.blog-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.blog-content-wrapper {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1440px) {
+  .blog-content-wrapper {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .blog-content-wrapper {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 834px) {
+  .blog-content-wrapper {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 440px) {
+  .blog-content-wrapper {
+    padding: 0 10px;
+  }
+}
