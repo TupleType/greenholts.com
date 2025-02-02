@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import "./BlogCard.css";
 
@@ -6,7 +8,7 @@ export default function BlogCard({ blog, theme }) {
     <div className="blog-card" onClick={() => window.open(blog.link, "_blank")}>
       <div className="blog-image">
         <img
-          src={`${process.env.PUBLIC_URL}thumbnails/${blog.thumbnail}`}
+          src={`/thumbnails/${blog.thumbnail}`}
           alt={blog.title}
         />
       </div>

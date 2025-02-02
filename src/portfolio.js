@@ -21,9 +21,7 @@ const greeting = {
 const seo = {
   title: "Asi Greenholts",
   description: greeting.subTitle,
-  charset: "utf-8",
   contentType: "text/html; charset=utf-8",
-  viewport: "width=device-width, initial-scale=1",
   xHandle: "@TupleType",
   og: {
     title: "Asi Greenholts",

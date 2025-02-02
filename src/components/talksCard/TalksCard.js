@@ -1,22 +1,17 @@
-import React, { useState, useEffect } from "react";
-import "./TalksCard.scss";
-import { Fade } from "react-reveal";
+"use client";
+
+import React from "react";
+import "./TalksCard.css";
+import { Fade } from "react-swift-reveal";
 
 export default function TalksCard({ talk, isDark }) {
-  const [logo, setLogo] = useState(null);
-
-  useEffect(() => {
-    // Dynamically import image
-    import(`../../assets/images/${talk.logo}`)
-      .then((image) => setLogo(image.default))
-      .catch((error) => console.error("Image loading failed", error));
-  }, [talk.logo]);
-
   const handleClick = () => {
     if (talk.link) {
       window.open(talk.link, "_blank");
     }
   };
+
+  const imagePath = `/images/${talk.logo}`;
 
   return (
     <Fade right duration={1000}>
@@ -27,7 +22,7 @@ export default function TalksCard({ talk, isDark }) {
       >
         <div className="talk-name-div">
           <div className="talk-title-row">
-            <img className="logo_img" src={logo} alt={talk.logo} />
+            <img className="logo_img" src={imagePath} alt={talk.logo} />
             <p className="talk-name">{talk.event}</p>
           </div>
           <p className="talk-subtitle">{talk.title}</p>

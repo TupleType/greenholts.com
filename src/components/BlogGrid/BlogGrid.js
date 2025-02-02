@@ -1,5 +1,7 @@
+"use client";
+
 import React from "react";
-import { Fade } from "react-reveal";
+import { Fade } from "react-swift-reveal";
 import BlogCard from "../blogCard/BlogCard";
 import "./BlogGrid.css";
 

@@ -1,6 +1,8 @@
+"use client";
+
 import React from "react";
 import "./TopBlog.css";
-import { Fade } from "react-reveal";
+import { Fade } from "react-swift-reveal";
 
 const TopBlog = ({ blog, theme }) => {
   return (
@@ -11,10 +13,7 @@ const TopBlog = ({ blog, theme }) => {
           onClick={() => window.open(blog.link, "_blank")}
         >
           <div className="top-blog-image">
-            <img
-              src={`${process.env.PUBLIC_URL}thumbnails/${blog.thumbnail}`}
-              alt={blog.title}
-            />
+            <img src={`/thumbnails/${blog.thumbnail}`} alt={blog.title} />
           </div>
           <div className={`top-blog-content ${theme.name}`}>
             <h3 style={{ color: theme.text }}>{blog.title}</h3>

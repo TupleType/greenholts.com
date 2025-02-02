@@ -1,11 +1,15 @@
+"use client";
+
 import React from "react";
 import "./SocialMedia.css";
 import { socialMediaLinks } from "../../portfolio";
 import styled from "styled-components";
 
-const IconWrapper = styled.span`
+const IconWrapper = styled.span.withConfig({
+  shouldComponentUpdate: (prop) => !['link', 'fontAwesomeIcon'].includes(prop),
+})`
   i {
-    background-color: ${(props) => props.backgroundColor};
+    background-color: ${(props) => props.$backgroundColor};
   }
   &:hover i {
     background-color: ${({ theme }) => theme.text};
@@ -24,7 +28,9 @@ export default function socialMedia(props) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <IconWrapper {...media} {...props}>
+            <IconWrapper
+              $backgroundColor={media.backgroundColor}
+            >
               <i className={`fab ${media.fontAwesomeIcon}`}></i>
             </IconWrapper>
           </a>

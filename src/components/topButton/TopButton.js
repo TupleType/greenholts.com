@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useEffect } from "react";
 import "./TopButton.css";
 
 export default function TopButton({ theme }) {
@@ -18,9 +20,12 @@ export default function TopButton({ theme }) {
     }
   }
 
-  window.onscroll = function () {
-    scrollFunction();
-  };
+  useEffect(() => {
+    window.addEventListener("scroll", scrollFunction);
+    return () => {
+      window.removeEventListener("scroll", scrollFunction);
+    };
+  }, []);
 
   const onMouseEnter = (color, bgColor) => {
     /* For the button */

@@ -1,7 +1,9 @@
+"use client";
+
 import React from "react";
-import Button from "../../components/button/Button";
+import Button from "@/components/button/Button";
+import { Fade } from "react-swift-reveal";
 import "./GoToBlog.css";
-import { Fade } from "react-reveal";
 
 export default function GoToBlog(props) {
   const theme = props.theme;
