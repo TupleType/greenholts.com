@@ -37,6 +37,9 @@ const jsonLd = getJsonld();
 
 export const metadata = {
   title: "Asi Greenholts - Blog",
+  openGraph: {
+    title: "Asi Greenholts - Blog",
+  },
   twitter: {
     title: "Asi Greenholts - Blog",
   },

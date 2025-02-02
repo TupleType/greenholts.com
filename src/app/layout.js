@@ -4,22 +4,20 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import { seo } from "@/portfolio";
 
 export const metadata = {
+  metadataBase: new URL(seo.og.url),
   description: seo.description,
+  canonical: '/',
   openGraph: {
-    title: seo.og.title,
     type: seo.og.type,
     url: seo.og.url,
-    image: seo.og.image,
     description: seo.description,
     locale: seo.og.locale,
-    width: seo.og.imageWidth,
-    height: seo.og.imageHeight,
+    siteName: seo.og.title,
   },
   twitter: {
     card: seo.og.title,
     site: seo.xHandle,
     description: seo.description,
-    image: seo.og.image,
   },
 };
 

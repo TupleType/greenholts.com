@@ -1,11 +1,6 @@
 import projectsData from "./shared/projects.json";
 import TalksData from "./shared/talks.json";
 
-// Settings
-const settings = {
-  url: "https://greenholts.com/",
-};
-
 //Home Page
 const greeting = {
   title: "Who Am I",
@@ -21,15 +16,10 @@ const greeting = {
 const seo = {
   title: "Asi Greenholts",
   description: greeting.subTitle,
-  contentType: "text/html; charset=utf-8",
   xHandle: "@TupleType",
   og: {
-    title: "Asi Greenholts",
     type: "website",
-    url: settings.url,
-    image: `${settings.url}icons/preview.jpg`,
-    imageWidth: "1200",
-    imageHeight: "640",
+    url: "https://greenholts.com/",
     locale: "en_US",
   },
 };
@@ -110,7 +100,6 @@ const talks = TalksData.data;
 // https://www.jenkins.io/security/advisory/2022-12-07/#SECURITY-2661
 
 export {
-  settings,
   projects,
   talks,
   seo,
