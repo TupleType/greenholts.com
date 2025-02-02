@@ -1,5 +1,3 @@
-"use client";
-
 import React, { Component } from "react";
 
 class FeelingProud extends Component {

@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import Button from "@/components/button/Button";
 import { Fade } from "react-swift-reveal";

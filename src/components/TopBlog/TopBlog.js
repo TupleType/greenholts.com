@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import "./TopBlog.css";
 import { Fade } from "react-swift-reveal";
