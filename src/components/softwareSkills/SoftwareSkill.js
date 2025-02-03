@@ -1,14 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./SoftwareSkill.css";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
+import { Icon } from "@iconify/react";
 
 const SoftwareSkill = ({ logos }) => {
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
-
   return (
     <div>
       <div className="software-skills-main-div">
@@ -24,20 +19,7 @@ const SoftwareSkill = ({ logos }) => {
               }
             >
               <li className="software-skill-inline" name={logo.skillName}>
-                {isClient && logo.fontAwesomeClassname && (
-                  <span
-                    className="iconify"
-                    data-icon={logo.fontAwesomeClassname}
-                    data-inline="false"
-                  />
-                )}
-                {isClient && !logo.fontAwesomeClassname && logo.imageSrc && (
-                  <img
-                    className="skill-image"
-                    src={`${process.env.PUBLIC_URL}/skills/${logo.imageSrc}`}
-                    alt={logo.skillName}
-                  />
-                )}
+                <Icon icon={logo.fontAwesomeClassname} />
               </li>
             </OverlayTrigger>
           ))}
