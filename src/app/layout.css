@@ -1,12 +1,4 @@
 @font-face {
-  font-family: "Agustina Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Agustina Regular"),
-    url("/fonts/Agustina.woff") format("woff");
-}
-
-@font-face {
   font-family: "Montserrat";
   src: local("Montserrat"),
     url("/fonts/Montserrat-Regular.ttf") format("woff");
@@ -19,27 +11,9 @@
 }
 
 @font-face {
-  font-family: "Google Sans Bold Italic";
-  src: local("Google Sans Bold Italic"),
-    url("/fonts/GoogleSans-BoldItalic.ttf") format("woff");
-}
-
-@font-face {
-  font-family: "Google Sans Italic";
-  src: local("Google Sans Italic"),
-    url("/fonts/GoogleSans-Italic.ttf") format("woff");
-}
-
-@font-face {
   font-family: "Google Sans Medium";
   src: local("Google Sans Medium"),
     url("/fonts/GoogleSans-Medium.ttf") format("woff");
-}
-
-@font-face {
-  font-family: "Google Sans Medium Italic";
-  src: local("Google Sans Medium Italic"),
-    url("/fonts/GoogleSans-MediumItalic.ttf") format("woff");
 }
 
 @font-face {
@@ -47,7 +21,6 @@
   src: local("Google Sans Regular"),
     url("/fonts/GoogleSans-Regular.ttf") format("woff");
 }
-/* Add other font-face declarations as needed */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",

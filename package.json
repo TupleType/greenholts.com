@@ -10,6 +10,10 @@
     "prod": "next start"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-brands-svg-icons": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "@next/third-parties": "^15.1.6",
     "next": "^15.1.6",
     "node-fetch": "^3.3.2",

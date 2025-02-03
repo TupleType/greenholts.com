@@ -7,8 +7,6 @@ const greeting = {
   name: "Asi Greenholts",
   subTitle:
     "With 9+ years in cybersecurity, I thrive on solving complex problems. My experience includes SOC management, incident response, security architecture and security engineering. I enjoy developing software and automating things that can be done much faster manually.",
-  resumeLink:
-    "https://drive.google.com/file/d/1bXRknv_h-XI_3CQ3SGPteGODtvEb7YvI/view?usp=sharing",
   linkedin_link: "https://www.linkedin.com/in/asi-greenholts",
 };
 

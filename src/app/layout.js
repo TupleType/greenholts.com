@@ -6,7 +6,7 @@ import { seo } from "@/portfolio";
 export const metadata = {
   metadataBase: new URL(seo.og.url),
   description: seo.description,
-  canonical: '/',
+  canonical: "/",
   openGraph: {
     type: seo.og.type,
     url: seo.og.url,
@@ -27,10 +27,6 @@ export default function RootLayout({ children }) {
       <GoogleAnalytics gaId="G-B53DBKPZ3M" />
       <head>
         <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        />
         <link
           rel="apple-touch-icon"
           sizes="57x57"

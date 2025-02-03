@@ -1,4 +1,10 @@
 .social-media-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
   font-size: 2em;
 }
 
@@ -26,6 +32,6 @@
 /* Media Query */
 @media (max-width: 834px) {
   .social-media-div {
-    text-align: center;
+    justify-content: center;
   }
 }

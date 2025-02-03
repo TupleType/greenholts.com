@@ -1,5 +1,9 @@
 import React, { useEffect } from "react";
 import "./TopButton.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import { library } from "@fortawesome/fontawesome-svg-core";
+library.add(faArrowUp);
 
 export default function TopButton({ theme }) {
   function GoUpEvent() {
@@ -62,7 +66,11 @@ export default function TopButton({ theme }) {
       onMouseEnter={() => onMouseEnter(theme.text, theme.body)}
       onMouseLeave={() => onMouseLeave(theme.body, theme.text)}
     >
-      <i className="fas fa-arrow-up" id="arrow" aria-hidden="true" />
+      <FontAwesomeIcon
+        icon="fa-solid fa-arrow-up"
+        id="arrow"
+        aria-hidden="true"
+      />
     </div>
   );
 }
