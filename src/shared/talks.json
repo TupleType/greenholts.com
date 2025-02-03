@@ -4,7 +4,7 @@
       "id": "1",
       "event": "DEFCON 31",
       "title": "The GitHub Actions Worm: Compromising GitHub repositories through the Actions dependency tree",
-      "videoUrl": "https://www.youtube.com/embed/j8ZiIOd53JU?si=R4B-CTIHiiqxIk5E",
+      "videoId": "j8ZiIOd53JU",
       "abstract": null,
       "logo": "defcon.png",
       "date": "2023-08-12"
@@ -13,7 +13,7 @@
       "id": "2",
       "event": "RSA Conference 2023",
       "title": "Abuse of Repository Webhooks to Access Hundreds of Internal CI Systems",
-      "videoUrl": "https://www.youtube.com/embed/ntFjdiYJ9K8?si=GkxEeNyyjthMe7OR",
+      "videoId": "ntFjdiYJ9K8",
       "abstract": null,
       "logo": "rsac.jpg",
       "date": "2023-04-27"
@@ -22,7 +22,7 @@
       "id": "3",
       "event": "Bsides Vegas 2022",
       "title": "Climbing the Production Mountain: Practical CI/CD Attacks Using CI/CD Goat",
-      "videoUrl": "https://www.youtube.com/embed/w-R2PT2jfdU?si=n8xoSv7dUPDv9yyx",
+      "videoId": "w-R2PT2jfdU",
       "abstract": null,
       "logo": "bsideslv.png",
       "date": "2022-08-09"
@@ -31,7 +31,7 @@
       "id": "4",
       "event": "BsidesTLV 2024",
       "title": "The GitHub Actions Worm: Compromising GitHub repositories through the Actions dependency tree",
-      "videoUrl": "https://www.youtube.com/embed/ktL6FZFJ_Z8?si=YuBJxh5NwTCbB1P9",
+      "videoId": "ktL6FZFJ_Z8",
       "abstract": null,
       "logo": "bsidestlv.png",
       "date": "2024-06-27"
@@ -40,7 +40,7 @@
       "id": "5",
       "event": "Bsides Vegas 2023",
       "title": "The GitHub Actions Worm: Compromising GitHub repositories through the Actions dependency tree",
-      "videoUrl": null,
+      "videoId": null,
       "abstract": "How wide can a GitHub Actions worm spread? In this talk, I'll demonstrate how a worm can crawl through actions and projects, infecting them with malware. We will explore the ways in which actions are loosely and implicitly dependent on other actions, and create a graph-based dependency tree for GitHub actions. This map will set the path for our worm, that is searching its way to infecting as many action dependencies and target as many GitHub projects as possible. Join this talk to learn about the methods our worm uses to make its way towards other actions, to get familiar with the high profile open source projects we could hijack, and to see this worm in action over a demo.",
       "logo": "bsideslv.png",
       "link": "https://archive.bsideslv.org/2023/talks#S9EJCP",
@@ -50,7 +50,7 @@
       "id": "6",
       "event": "OWASP AppSec Israel 2023",
       "title": "How we abused repository webhooks to access hundreds of internal CI systems",
-      "videoUrl": null,
+      "videoId": null,
       "abstract": "CI/CD environments and systems, and specifically CI systems are increasingly becoming the target of choice for many adversaries. Ranging from sophisticated adversaries (like SolarWinds) to less mature ones, it is evident that the wide adoption of CI/CD and DevOps is changing the way adversaries behave. As adoption of CI systems and processes becomes more prevalent, many organizations opt for a CI/CD architecture which combines a SaaS-based SCM (e.g. GitHub/GitLab/Bitbucket) with a self-hosted CI solution (e.g. Jenkins, TeamCity). Many organizations using such architectures - including those with mature security programs - allow the CI systems to receive webhook events (in the form of HTTP requests) from the SaaS-based SCM systems. IP restrictions allowing access only from the static list of public IPs provided by the SaaS vendor are commonly used as the only control concealing the CI from the general public. However, our research proves this control is not sufficient.This talk will showcase just how harmful such requests can be, how far an adversary could go inside a target organization's CI - like executing malicious code, and what possible controls can be implemented to harden environments and mitigate risk. We'll demonstrate the entire attack flow, and explain how we used this technique to access hundreds of internal CI systems in scale.",
       "logo": "owaspil.png",
       "link": "https://owaspappsecil2023.sched.com/event/1LqtW",

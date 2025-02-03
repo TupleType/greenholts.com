@@ -1,6 +1,7 @@
 import React from "react";
 import "./TalksCard.css";
 import { Fade } from "react-swift-reveal";
+import { YouTubeEmbed } from '@next/third-parties/google'
 
 export default function TalksCard({ talk, isDark }) {
   const handleClick = () => {
@@ -26,16 +27,8 @@ export default function TalksCard({ talk, isDark }) {
           <p className="talk-subtitle">{talk.title}</p>
         </div>
         <div className="talk-content">
-          {talk.videoUrl ? (
-            <iframe
-              width="560"
-              height="315"
-              src={talk.videoUrl}
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            ></iframe>
+          {talk.videoId ? (
+            <YouTubeEmbed videoid={talk.videoId} params="controls=0" />
           ) : (
             <p className="talk-abstract">{talk.abstract}</p>
           )}
