@@ -1,9 +1,11 @@
+"use client";
+
 import React from "react";
 import "./TalksCard.css";
 import { Fade } from "react-swift-reveal";
-import { YouTubeEmbed } from '@next/third-parties/google'
+import { YouTubeEmbed } from "@next/third-parties/google";
 
-export default function TalksCard({ talk, isDark }) {
+export default function TalksCard({ talk }) {
   const handleClick = () => {
     if (talk.link) {
       window.open(talk.link, "_blank");
@@ -15,7 +17,7 @@ export default function TalksCard({ talk, isDark }) {
   return (
     <Fade right duration={1000}>
       <div
-        className={isDark ? "dark-card-mode talk-card-div" : "talk-card-div"}
+        className="talk-card-div"
         onClick={handleClick}
         style={{ cursor: talk.link ? "pointer" : "default" }}
       >

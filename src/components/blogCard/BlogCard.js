@@ -1,7 +1,8 @@
 import React from "react";
 import "./BlogCard.css";
+import { chosenTheme as theme } from "@/app/theme";
 
-export default function BlogCard({ blog, theme }) {
+export default function BlogCard({ blog }) {
   return (
     <div className="blog-card" onClick={() => window.open(blog.link, "_blank")}>
       <div className="blog-image">

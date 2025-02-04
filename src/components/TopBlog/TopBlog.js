@@ -1,8 +1,11 @@
+"use client";
+
 import React from "react";
 import "./TopBlog.css";
 import { Fade } from "react-swift-reveal";
+import { chosenTheme as theme } from "@/app/theme";
 
-const TopBlog = ({ blog, theme }) => {
+const TopBlog = ({ blog }) => {
   return (
     <Fade top duration={2000} distance="20px" key={blog.id}>
       <div className="top-blog">

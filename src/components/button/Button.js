@@ -1,5 +1,6 @@
 import React from "react";
 import "./Button.css";
+import { chosenTheme as theme } from "@/app/theme";
 
 const onMouseEnter = (event, color, bgColor) => {
   const el = event.target;
@@ -13,7 +14,7 @@ const onMouseOut = (event, color, bgColor) => {
   el.style.backgroundColor = bgColor;
 };
 
-export default function Button({ text, className, href, newTab, theme }) {
+export default function Button({ text, className, href, newTab }) {
   return (
     <div className={className}>
       <a

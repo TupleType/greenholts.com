@@ -1,4 +1,3 @@
-import HomeContainer from "@/containers/home/HomeContainer";
 import {
   greeting,
   seo,
@@ -7,6 +6,14 @@ import {
   talks,
   projects,
 } from "@/portfolio.js";
+import Header from "@/components/header/Header";
+import Greeting from "@/containers/greeting/Greeting";
+import Skills from "@/containers/skills/Skills";
+import Footer from "@/components/footer/Footer";
+import TopButton from "@/components/topButton/TopButton";
+import Projects from "@/containers/projects/Projects";
+import Talks from "@/containers/talks/Talks";
+import GoToBlog from "@/components/GoToBlogButton/GoToBlog";
 
 function getJsonld() {
   let socialMedia = [];
@@ -91,7 +98,16 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <HomeContainer />
+      <Header />
+      <main style={{ flex: 1 }}>
+        <Greeting />
+        <Skills />
+        <Projects />
+        <Talks />
+        <GoToBlog />
+      </main>
+      <Footer />
+      <TopButton />
     </div>
   );
 }

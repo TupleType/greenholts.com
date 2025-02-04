@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import "./SocialMedia.css";
 import { socialMediaLinks } from "../../portfolio";
@@ -30,7 +32,7 @@ const IconWrapper = styled.span.withConfig({
   }
 `;
 
-export default function socialMedia(props) {
+export default function socialMedia() {
   return (
     <div className="social-media-div">
       {socialMediaLinks.map((media, i) => {

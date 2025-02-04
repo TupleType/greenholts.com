@@ -1,9 +1,12 @@
+"use client";
+
 import React from "react";
 import { Fade } from "react-swift-reveal";
 import "./BlogHeader.css";
 import { blogSettings } from "../../portfolio";
+import { chosenTheme as theme } from "@/app/theme";
 
-const BlogHeader = ({ theme }) => {
+const BlogHeader = () => {
   return (
     <div className="blog-header">
       <Fade left duration={1000} distance="40px">

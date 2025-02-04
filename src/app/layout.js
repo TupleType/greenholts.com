@@ -1,7 +1,7 @@
-import BodyWrapper from "@/components/BodyWrapper";
 import "./layout.css";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { seo } from "@/portfolio";
+import { GlobalStyles } from "@/app/global";
 
 export const metadata = {
   metadataBase: new URL(seo.og.url),
@@ -104,7 +104,8 @@ export default function RootLayout({ children }) {
         <meta name="theme-color" content="#000000" />
       </head>
       <body>
-        <BodyWrapper>{children}</BodyWrapper>
+        <GlobalStyles />
+        {children}
       </body>
     </html>
   );

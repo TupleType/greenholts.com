@@ -1,8 +1,10 @@
+"use client";
+
 import React from "react";
 import "./GithubRepoCard.css";
 import { Fade } from "react-swift-reveal";
 
-export default function GithubRepoCard({ repo, isDark }) {
+export default function GithubRepoCard({ repo }) {
   function openUrlInNewTab(url, name) {
     if (!url) {
       console.log(`URL in ${name} is undefined`);
@@ -16,7 +18,7 @@ export default function GithubRepoCard({ repo, isDark }) {
     <Fade left duration={1000}>
       <div>
         <div
-          className={isDark ? "dark-card-mode repo-card-div" : "repo-card-div"}
+          className="repo-card-div"
           key={repo.id}
           onClick={() => openUrlInNewTab(repo.url, repo.name)}
         >

@@ -1,11 +1,14 @@
+"use client";
+
 import React, { useEffect } from "react";
 import "./TopButton.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
+import { chosenTheme as theme } from "@/app/theme";
 library.add(faArrowUp);
 
-export default function TopButton({ theme }) {
+export default function TopButton() {
   function GoUpEvent() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;

@@ -1,10 +1,12 @@
+"use client";
+
 import React from "react";
 import "./Skills.css";
 import SkillSection from "./SkillSection";
 import { Fade } from "react-swift-reveal";
+import { chosenTheme as theme } from "@/app/theme";
 
-export default function Skills(props) {
-  const theme = props.theme;
+export default function Skills() {
   return (
     <div className="main" id="skills">
       <div className="skills-header-div">

@@ -1,13 +1,10 @@
-"use client";
-
-import React, { useContext } from "react";
+import React from "react";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 import "./Error.css";
-import { ThemeContext } from "styled-components";
+import { chosenTheme as theme } from "@/app/theme";
 
 export default function Error() {
-  const theme = useContext(ThemeContext);
 
   return (
     <div className="error-container">
