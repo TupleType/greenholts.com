@@ -15,6 +15,8 @@ import Projects from "@/containers/projects/Projects";
 import Talks from "@/containers/talks/Talks";
 import GoToBlog from "@/components/GoToBlogButton/GoToBlog";
 
+const personId = `#author`;
+
 function getJsonld() {
   let socialMedia = [];
   socialMediaLinks
@@ -36,6 +38,7 @@ function getJsonld() {
       name: talk.title,
       description: talk.description,
       startDate: talk.date,
+      performer: { "@id": personId },
       location: {
         "@type": "Place",
         name: talk.event,
@@ -50,29 +53,33 @@ function getJsonld() {
       description: project.description,
       codeRepository: project.url,
       programmingLanguage: project.primaryLanguage?.name,
-      contributor: {
-        "@type": "Person",
-        name: greeting.title,
+      author: {
+        "@id": personId,
       },
     };
   });
 
   const jsonld = {
     "@context": "https://schema.org/",
-    "@type": "Person",
-    name: greeting.name,
-    url: seo.og.url,
-    sameAs: socialMedia,
-    jobTitle: skills.data[0].title,
-    worksFor: {
-      "@type": "Organization",
-      name: skills.data[0].title,
-    },
-    image: seo.og.image,
-    description: greeting.description,
-    knowsAbout: knowsAbout,
-    performerIn: performerIn,
-    creator: openSource,
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": personId,
+        name: greeting.name,
+        url: seo.og.url,
+        sameAs: socialMedia,
+        jobTitle: skills.data[0].title,
+        worksFor: {
+          "@type": "Organization",
+          name: skills.data[0].title,
+        },
+        image: seo.og.image,
+        description: greeting.description,
+        knowsAbout: knowsAbout,
+        performerIn: performerIn,
+      },
+      ...openSource,
+    ],
   };
   return jsonld;
 }

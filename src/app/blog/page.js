@@ -5,7 +5,23 @@ import BlogContainer from "@/containers/blog/BlogContainer";
 function getJsonld() {
   const formatDate = (dateStr) => {
     const date = new Date(dateStr);
-    return date.toISOString().split("T")[0]; // Returns YYYY-MM-DD
+    const pad = (num) => String(num).padStart(2, "0");
+
+    // Format date and time
+    const year = date.getFullYear();
+    const month = pad(date.getMonth() + 1);
+    const day = pad(date.getDate());
+    const hours = pad(date.getHours());
+    const minutes = pad(date.getMinutes());
+    const seconds = pad(date.getSeconds());
+
+    // Format timezone
+    const tzOffset = date.getTimezoneOffset();
+    const tzHours = pad(Math.abs(Math.floor(tzOffset / 60)));
+    const tzMinutes = pad(Math.abs(tzOffset % 60));
+    const tzSign = tzOffset <= 0 ? "+" : "-";
+
+    return `${year}-${month}-${day}T${hours}:${minutes}:${seconds}${tzSign}${tzHours}:${tzMinutes}`;
   };
 
   const blogPosts = blogs.data.map((blog) => {
@@ -18,6 +34,7 @@ function getJsonld() {
       author: {
         "@type": "Person",
         name: greeting.name,
+        url: seo.og.url,
       },
       url: blog.link,
     };
