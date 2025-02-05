@@ -17,17 +17,6 @@ export default function Footer(props) {
               </span>
               <span style={{ color: theme.text }}></span>
             </div>
-            <p className="footer-text" style={{ color: theme.secondaryText }}>
-              Theme by{" "}
-              <a
-                href="https://github.com/ashutosh1919/masterPortfolio"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ color: theme.secondaryText }}
-              >
-                masterPortfolio
-              </a>
-            </p>
             <div className="footer-social">
               <SocialMedia />
             </div>
