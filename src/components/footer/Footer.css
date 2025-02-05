@@ -26,8 +26,8 @@
 }
 
 .footer-logo {
-  font-family: "Consolas";
-  font-weight: bold;
+  font-family: var(--font-logo);
+  font-weight: 700;
   font-size: 1.5em;
 }
 

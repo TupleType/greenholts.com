@@ -58,14 +58,15 @@
 }
 
 .header .logo-name {
-  font-family: "Consolas";
-  font-weight: bold;
+  font-family: var(--font-logo);
+  font-weight: 700;
   padding: 0 10px;
   /* color: #55198b; */
 }
 
 .header .logo-arrow {
-  font-family: "Consolas";
+  font-family: var(--font-logo);
+  font-weight: 700;
   display: flex;
   align-items: center;
   padding: 0 15px;
