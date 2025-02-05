@@ -43,11 +43,7 @@ export default function TalksCard({ talk }) {
         </div>
         <div className="talk-content">
           {talk.videoId ? (
-            <YouTubeEmbed
-              videoid={talk.videoId}
-              params="controls=0"
-              style={`background-image: url('https://i.ytimg.com/vi/${talk.videoId}/hqdefault.jpg');`}
-            />
+            <YouTubeEmbed videoid={talk.videoId} params="controls=0" />
           ) : (
             <p className="talk-abstract">{talk.abstract}</p>
           )}
