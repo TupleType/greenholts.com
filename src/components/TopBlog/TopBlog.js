@@ -4,6 +4,7 @@ import React from "react";
 import "./TopBlog.css";
 import { Fade } from "react-swift-reveal";
 import { chosenTheme as theme } from "@/app/theme";
+import ExportedImage from "next-image-export-optimizer";
 
 const TopBlog = ({ blog }) => {
   return (
@@ -14,7 +15,12 @@ const TopBlog = ({ blog }) => {
           onClick={() => window.open(blog.link, "_blank")}
         >
           <div className="top-blog-image">
-            <img src={`/thumbnails/${blog.thumbnail}`} alt={blog.title} />
+            <ExportedImage
+              src={`/images/${blog.thumbnail}`}
+              width={blog.thumbnail_width}
+              height={blog.thumbnail_height}
+              alt={blog.title}
+            />
           </div>
           <div className={`top-blog-content ${theme.name}`}>
             <h3 style={{ color: theme.text }}>{blog.title}</h3>

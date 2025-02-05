@@ -1,13 +1,16 @@
 import React from "react";
 import "./BlogCard.css";
 import { chosenTheme as theme } from "@/app/theme";
+import ExportedImage from "next-image-export-optimizer";
 
 export default function BlogCard({ blog }) {
   return (
     <div className="blog-card" onClick={() => window.open(blog.link, "_blank")}>
       <div className="blog-image">
-        <img
-          src={`/thumbnails/${blog.thumbnail}`}
+        <ExportedImage
+          src={`/images/${blog.thumbnail}`}
+          width={blog.thumbnail_width}
+          height={blog.thumbnail_height}
           alt={blog.title}
         />
       </div>

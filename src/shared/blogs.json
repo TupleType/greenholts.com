@@ -7,6 +7,8 @@
       "date": "Sep 14, 2023",
       "reading_time": "16 min read",
       "thumbnail": "worm-thumbnail.png",
+      "thumbnail_width": "1600",
+      "thumbnail_height": "838",
       "link": "https://www.paloaltonetworks.com/blog/prisma-cloud/github-actions-worm-dependencies/"
     },
     {
@@ -16,6 +18,8 @@
       "date": "Jul 13, 2023",
       "reading_time": "15 min read",
       "thumbnail": "webhook-thumbnail.png",
+      "thumbnail_width": "1062",
+      "thumbnail_height": "461",
       "link": "https://www.paloaltonetworks.com/blog/prisma-cloud/repository-webhook-abuse-access-ci-cd-systems-at-scale/"
     },
     {
@@ -25,6 +29,8 @@
       "date": "Dec 8, 2022",
       "reading_time": "9 min read",
       "thumbnail": "secure-os-thumbnail.png",
+      "thumbnail_width": "1024",
+      "thumbnail_height": "307",
       "link": "https://web.archive.org/web/20230601060727/https://www.cidersecurity.io/blog/research/how-to-secure-your-open-source-project-a-quick-guide-for-developers/"
     },
     {
@@ -34,6 +40,8 @@
       "date": "Jul 6, 2022",
       "reading_time": "7 min read",
       "thumbnail": "credentials-thumbnail.png",
+      "thumbnail_width": "1024",
+      "thumbnail_height": "307",
       "link": "https://web.archive.org/web/20230928082723/https://www.cidersecurity.io/blog/research/optimizing-ci-cd-credential-hygiene-a-comparison-of-ci-cd-solutions/"
     },
     {
@@ -43,6 +51,8 @@
       "date": "Apr 7, 2022",
       "reading_time": "3 min read",
       "thumbnail": "cicd-goat-thumbnail.png",
+      "thumbnail_width": "765",
+      "thumbnail_height": "493",
       "link": "https://web.archive.org/web/20230601062424/https://www.cidersecurity.io/blog/research/ci-cd-goat/"
     },
     {
@@ -52,6 +62,8 @@
       "date": "Feb 17, 2022",
       "reading_time": "11 min read",
       "thumbnail": "jenkins-thumbnail.jpg",
+      "thumbnail_width": "1024",
+      "thumbnail_height": "659",
       "link": "https://www.paloaltonetworks.com/blog/prisma-cloud/secure-jenkins-default-build-authorization-configuration/"
     }
   ]
