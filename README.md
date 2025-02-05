@@ -13,9 +13,10 @@ A responsive portfolio website built with React, featuring my projects, blog pos
 
 - 🎨 Modern UI/UX
 - 📱 Fully responsive with mobile support
-- 👨‍💻 Personal portfolio showcase
-- 📝 Blog section
+- ⚡ Optimized performance ([Core Web Vitals](https://web.dev/articles/vitals))
 - 🔍 SEO optimized
+- 👨‍💻 Personal portfolio showcase
+- 📝 Blog page
 - 🔀 Custom 404 page
 
 ## Development
