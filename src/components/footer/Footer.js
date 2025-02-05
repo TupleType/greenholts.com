@@ -4,7 +4,7 @@ import { greeting } from "../../portfolio.js";
 import SocialMedia from "../socialMedia/SocialMedia";
 import { chosenTheme as theme } from "@/app/theme";
 
-export default function Footer(props) {
+export default function Footer() {
   return (
     <div className="footer-main">
       <div className="footer-div">

@@ -3,8 +3,13 @@
 import React from "react";
 import "./TalksCard.css";
 import { Fade } from "react-swift-reveal";
-import { YouTubeEmbed } from "@next/third-parties/google";
+import dynamic from "next/dynamic";
 import ExportedImage from "next-image-export-optimizer";
+
+const YouTubeEmbed = dynamic(
+  () => import("@next/third-parties/google").then((mod) => mod.YouTubeEmbed),
+  { ssr: false }
+);
 
 export default function TalksCard({ talk }) {
   const handleClick = () => {
@@ -25,14 +30,24 @@ export default function TalksCard({ talk }) {
         <div className="talk-name-div">
           <div className="talk-title-row">
             {/* Width and height are defined in css */}
-            <ExportedImage className="logo_img" src={imagePath} width={40} height={40} alt={talk.logo} /> 
+            <ExportedImage
+              className="logo_img"
+              src={imagePath}
+              width={40}
+              height={40}
+              alt={talk.logo}
+            />
             <p className="talk-name">{talk.event}</p>
           </div>
           <p className="talk-subtitle">{talk.title}</p>
         </div>
         <div className="talk-content">
           {talk.videoId ? (
-            <YouTubeEmbed videoid={talk.videoId} params="controls=0" />
+            <YouTubeEmbed
+              videoid={talk.videoId}
+              params="controls=0"
+              style={`background-image: url('https://i.ytimg.com/vi/${talk.videoId}/hqdefault.jpg');`}
+            />
           ) : (
             <p className="talk-abstract">{talk.abstract}</p>
           )}
