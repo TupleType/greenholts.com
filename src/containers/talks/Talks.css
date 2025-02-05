@@ -27,7 +27,7 @@
 .talks-title {
   font-size: 60px;
   line-height: normal;
-  font-family: "Google Sans Regular";
+  font-family: var(--font-jakarta);
   text-align: left;
 }
 

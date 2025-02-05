@@ -52,7 +52,7 @@ export default function SkillSection() {
 
             <Fade right duration={2000}>
               <div className="skills-image-div">
-                <GetSkillSvg fileName={skill.fileName} theme={theme} />
+                <GetSkillSvg fileName={skill.fileName} />
               </div>
             </Fade>
           </div>

@@ -18,7 +18,6 @@ export default function GoToBlog(props) {
           }
           newTab={true}
           href="/blog"
-          theme={theme}
         ></Button>
       </div>
     </Fade>

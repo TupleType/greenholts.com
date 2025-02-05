@@ -16,7 +16,7 @@ export default function Skills() {
           </h1>
         </Fade>
       </div>
-      <SkillSection theme={theme} />
+      <SkillSection />
     </div>
   );
 }

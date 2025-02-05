@@ -9,7 +9,7 @@ import ExportedImage from "next-image-export-optimizer";
 export default function Error() {
   return (
     <div className="error-container">
-      <Header theme={theme} />
+      <Header />
       <div className="error-class">
         <h1 className="error-404">
           Page Not Found
@@ -34,7 +34,7 @@ export default function Error() {
           Go Home
         </a>
       </div>
-      <Footer theme={theme} />
+      <Footer />
     </div>
   );
 }

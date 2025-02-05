@@ -11,7 +11,7 @@ const BlogGrid = ({ blogs }) => {
     <div className="blog-grid">
       {blogs.map((blog) => (
         <Fade bottom duration={2000} distance="20px" key={blog.id}>
-          <BlogCard blog={blog} theme={theme} />
+          <BlogCard blog={blog} />
         </Fade>
       ))}
     </div>

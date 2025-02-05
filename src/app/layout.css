@@ -1,46 +1,33 @@
-@font-face {
-  font-family: "Montserrat";
-  src: local("Montserrat"),
-    url("/fonts/Montserrat-Regular.ttf") format("woff");
-}
-
-@font-face {
-  font-family: "Google Sans Bold";
-  src: local("Google Sans Bold"),
-    url("/fonts/GoogleSans-Bold.ttf") format("woff");
-}
-
-@font-face {
-  font-family: "Google Sans Medium";
-  src: local("Google Sans Medium"),
-    url("/fonts/GoogleSans-Medium.ttf") format("woff");
-}
-
-@font-face {
-  font-family: "Google Sans Regular";
-  src: local("Google Sans Regular"),
-    url("/fonts/GoogleSans-Regular.ttf") format("woff");
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
 html,
 body {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-jakarta);
+}
+
 body {
+  align-items: center;
+  background: #EDF9FE;
+  color: #001C55;
+  display: flex;
+  font-family: BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  transition: all 0.25s linear;
   margin: 0;
   padding: 0;
   width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  font: 19px / 23px Montserrat, "Montserrat", sans-serif;
+  font: 19px / 23px var(--font-jakarta);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -55,6 +42,7 @@ body {
 
 /* Media Query */
 @media (max-width: 1380px) {
+
   html,
   body {
     font-size: 16px;

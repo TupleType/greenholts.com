@@ -91,21 +91,17 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div
-      style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
-    >
+    <div>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main style={{ flex: 1 }}>
-        <Greeting />
-        <Skills />
-        <Projects />
-        <Talks />
-        <GoToBlog />
-      </main>
+      <Greeting />
+      <Skills />
+      <Projects />
+      <Talks />
+      <GoToBlog />
       <Footer />
       <TopButton />
     </div>

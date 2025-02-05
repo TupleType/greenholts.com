@@ -74,7 +74,7 @@
 /* menu */
 
 .menu {
-  font-family: "Google Sans Regular";
+  font-family: var(--font-jakarta);
 }
 
 /* Base menu styles */
@@ -133,27 +133,27 @@
   display: none;
 }
 
-.header .menu-btn:checked ~ .menu {
+.header .menu-btn:checked~.menu {
   max-height: 400px;
   box-shadow: none;
   border: none;
   background-color: inherit;
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon {
+.header .menu-btn:checked~.menu-icon .navicon {
   background: transparent;
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon:before {
+.header .menu-btn:checked~.menu-icon .navicon:before {
   transform: rotate(-45deg);
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon:after {
+.header .menu-btn:checked~.menu-icon .navicon:after {
   transform: rotate(45deg);
 }
 
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
 
@@ -183,7 +183,7 @@
     transition: margin-bottom 0.3s ease-out;
   }
 
-  .header .menu-btn:checked ~ .menu {
+  .header .menu-btn:checked~.menu {
     border-radius: 0;
     box-shadow: none;
   }
@@ -245,7 +245,7 @@
     z-index: 1000;
   }
 
-  .header .menu-btn:checked ~ .menu {
+  .header .menu-btn:checked~.menu {
     display: block;
     max-height: 400px;
   }

@@ -11,14 +11,14 @@
   display: inline-block;
   margin-right: 20px;
   margin-bottom: 20px;
-  font-family: "Google Sans Regular";
+  font-family: var(--font-jakarta);
 }
 
-.software-skill-inline > i {
+.software-skill-inline>i {
   color: #868e96;
 }
 
-.software-skill-inline > i:hover {
+.software-skill-inline>i:hover {
   color: #645beb;
 }
 

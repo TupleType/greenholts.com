@@ -3,12 +3,11 @@
 import React from "react";
 import "./Greeting.css";
 import SocialMedia from "@/components/socialMedia/SocialMedia";
-import Button from "@/components/button/Button";
 import { greeting } from "@/portfolio";
 import { Fade } from "react-swift-reveal";
 import FeelingProud from "./FeelingProud";
 import { chosenTheme as theme } from "@/app/theme";
-import { Icon } from "@iconify/react";
+import ConnectButton from "@/components/connectButton/ConnectButton";
 
 export default function Greeting() {
   return (
@@ -28,20 +27,7 @@ export default function Greeting() {
               </p>
               <SocialMedia theme={theme} />
               <div className="portfolio-repo-btn-div">
-                <Button
-                  text={
-                    <>
-                      <Icon icon="rivet-icons:user-add-solid" />
-                      <span style={{ marginLeft: "10px" }}>
-                        Connect with me
-                      </span>
-                    </>
-                  }
-                  newTab={true}
-                  href={greeting.linkedin_link}
-                  theme={theme}
-                  className="portfolio-repo-btn"
-                ></Button>
+                <ConnectButton />
               </div>
             </div>
           </div>

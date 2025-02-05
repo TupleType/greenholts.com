@@ -38,8 +38,8 @@
 
 .footer-text {
   text-align: center;
-  font-weight: bold;
-  font-family: "Google Sans Regular";
+  font-weight: 400;
+  font-family: var(--font-jakarta);
   margin: 0;
   width: 100%;
   position: absolute;
