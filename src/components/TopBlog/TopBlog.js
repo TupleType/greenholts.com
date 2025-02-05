@@ -20,6 +20,7 @@ const TopBlog = ({ blog }) => {
               width={blog.thumbnail_width}
               height={blog.thumbnail_height}
               alt={blog.title}
+              priority
             />
           </div>
           <div className={`top-blog-content ${theme.name}`}>
