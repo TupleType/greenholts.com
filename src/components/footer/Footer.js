@@ -2,7 +2,7 @@ import React from "react";
 import "./Footer.css";
 import { greeting } from "../../portfolio.js";
 import SocialMedia from "../socialMedia/SocialMedia";
-import { chosenTheme as theme } from "@/app/theme";
+import theme from "@/app/theme";
 
 export default function Footer() {
   return (

@@ -7,7 +7,7 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { chosenTheme as theme } from "@/app/theme";
+import theme from "@/app/theme";
 library.add(fab);
 
 const IconWrapper = styled.span.withConfig({

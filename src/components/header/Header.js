@@ -6,7 +6,7 @@ import { Fade } from "react-swift-reveal";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { greeting } from "../../portfolio.js";
-import { chosenTheme as theme } from "@/app/theme";
+import theme from "@/app/theme";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);

@@ -4,7 +4,7 @@ import React from "react";
 import { Fade } from "react-swift-reveal";
 import BlogCard from "../blogCard/BlogCard";
 import "./BlogGrid.css";
-import { chosenTheme as theme } from "@/app/theme";
+import theme from "@/app/theme";
 
 const BlogGrid = ({ blogs }) => {
   return (

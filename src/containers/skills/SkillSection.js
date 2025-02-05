@@ -6,7 +6,7 @@ import SoftwareSkill from "@/components/softwareSkills/SoftwareSkill";
 import { skills } from "@/portfolio";
 import { Fade } from "react-swift-reveal";
 import Research from "./ResearchImg";
-import { chosenTheme as theme } from "@/app/theme";
+import theme from "@/app/theme";
 
 function GetSkillSvg(props) {
   if (props.fileName === "Research") return <Research theme={props.theme} />;

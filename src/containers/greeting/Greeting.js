@@ -6,7 +6,7 @@ import SocialMedia from "@/components/socialMedia/SocialMedia";
 import { greeting } from "@/portfolio";
 import { Fade } from "react-swift-reveal";
 import FeelingProud from "./FeelingProud";
-import { chosenTheme as theme } from "@/app/theme";
+import theme from "@/app/theme";
 import ConnectButton from "@/components/connectButton/ConnectButton";
 
 export default function Greeting() {

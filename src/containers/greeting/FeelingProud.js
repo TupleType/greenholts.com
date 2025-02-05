@@ -1,5 +1,5 @@
 import React from "react";
-import { chosenTheme as theme } from "@/app/theme";
+import theme from "@/app/theme";
 
 export default function FeelingProud() {
   return (

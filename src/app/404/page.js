@@ -2,7 +2,7 @@ import React from "react";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 import "./Error.css";
-import { chosenTheme as theme } from "@/app/theme";
+import theme from "@/app/theme";
 import AsiImage from "../../../public/images/pablo.jpg";
 import ExportedImage from "next-image-export-optimizer";
 

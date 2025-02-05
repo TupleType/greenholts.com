@@ -4,7 +4,7 @@ import React from "react";
 import "./Skills.css";
 import SkillSection from "./SkillSection";
 import { Fade } from "react-swift-reveal";
-import { chosenTheme as theme } from "@/app/theme";
+import theme from "@/app/theme";
 
 export default function Skills() {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import "./BlogCard.css";
-import { chosenTheme as theme } from "@/app/theme";
+import theme from "@/app/theme";
 import ExportedImage from "next-image-export-optimizer";
 
 export default function BlogCard({ blog }) {

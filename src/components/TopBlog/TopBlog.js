@@ -3,7 +3,7 @@
 import React from "react";
 import "./TopBlog.css";
 import { Fade } from "react-swift-reveal";
-import { chosenTheme as theme } from "@/app/theme";
+import theme from "@/app/theme";
 import ExportedImage from "next-image-export-optimizer";
 
 const TopBlog = ({ blog }) => {

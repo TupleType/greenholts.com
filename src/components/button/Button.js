@@ -1,6 +1,6 @@
 import React from "react";
 import "./Button.css";
-import { chosenTheme as theme } from "@/app/theme";
+import theme from "@/app/theme";
 
 const onMouseEnter = (event, color, bgColor) => {
   const el = event.target;

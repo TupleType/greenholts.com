@@ -4,7 +4,7 @@ import React from "react";
 import { Fade } from "react-swift-reveal";
 import "./BlogHeader.css";
 import { blogSettings } from "../../portfolio";
-import { chosenTheme as theme } from "@/app/theme";
+import theme from "@/app/theme";
 
 const BlogHeader = () => {
   return (
