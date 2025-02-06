@@ -2,7 +2,7 @@
 
 import React from "react";
 import "./GithubRepoCard.css";
-import { Fade } from "react-swift-reveal";
+import Fade from "@/components/Fade/Fade";
 
 export default function GithubRepoCard({ repo }) {
   function openUrlInNewTab(url, name) {
@@ -15,7 +15,7 @@ export default function GithubRepoCard({ repo }) {
   }
 
   return (
-    <Fade left duration={1000}>
+    <Fade direction="left" duration={1000}>
       <div>
         <div
           className="repo-card-div"

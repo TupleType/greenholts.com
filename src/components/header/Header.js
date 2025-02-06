@@ -2,7 +2,7 @@
 
 import React from "react";
 import "./Header.css";
-import { Fade } from "react-swift-reveal";
+import Fade from "@/components/Fade/Fade";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { greeting } from "../../portfolio.js";
@@ -17,7 +17,7 @@ const Header = () => {
   };
 
   return (
-    <Fade top duration={1000} distance="20px">
+    <Fade direction="top" duration={1000} distance="20px">
       <div>
         <header className={`header ${isMenuOpen ? "menu-open" : ""}`}>
           <Link href="/" className="logo">

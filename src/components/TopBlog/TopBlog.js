@@ -2,13 +2,13 @@
 
 import React from "react";
 import "./TopBlog.css";
-import { Fade } from "react-swift-reveal";
+import Fade from "@/components/Fade/Fade";
 import theme from "@/app/theme";
 import ExportedImage from "next-image-export-optimizer";
 
 const TopBlog = ({ blog }) => {
   return (
-    <Fade top duration={2000} distance="20px" key={blog.id}>
+    <Fade direction="top" duration={2000} distance="20px">
       <div className="top-blog">
         <div
           className="top-blog-card"
@@ -23,7 +23,7 @@ const TopBlog = ({ blog }) => {
               priority
             />
           </div>
-          <div className={`top-blog-content ${theme.name}`}>
+          <div className="blog-content">
             <h2 style={{ color: theme.text }}>{blog.title}</h2>
             <p className="top-blog-meta" style={{ color: theme.secondaryText }}>
               {blog.date} · {blog.reading_time}

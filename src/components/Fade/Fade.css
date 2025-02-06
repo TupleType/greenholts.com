@@ -1,0 +1,30 @@
+.fade {
+  opacity: 0;
+  will-change: transform, opacity;
+  transition-property: transform, opacity;
+  transition-duration: var(--fade-duration);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+.fade-visible {
+  opacity: 1 !important;
+  transform: translate(0, 0) !important;
+  pointer-events: auto;
+}
+
+.fade-left {
+  transform: translateX(calc(var(--fade-distance) * -1));
+}
+
+.fade-right {
+  transform: translateX(var(--fade-distance));
+}
+
+.fade-top {
+  transform: translateY(calc(var(--fade-distance) * -1));
+}
+
+.fade-bottom {
+  transform: translateY(var(--fade-distance));
+}

@@ -90,6 +90,10 @@
   margin: 0;
   line-height: 1.5;
   font-weight: 400;
+  display: -webkit-box;
+  overflow: hidden;
+  min-height: calc(1.5em * 3);
+  /* Forces 3 lines of height */
 }
 
 .talk-content {

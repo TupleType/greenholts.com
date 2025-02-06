@@ -14,7 +14,7 @@ export default function BlogCard({ blog }) {
           alt={blog.title}
         />
       </div>
-      <div className={`blog-content ${theme.name}`}>
+      <div className="blog-content">
         <h2 style={{ color: theme.text }}>{blog.title}</h2>
         <p className="blog-meta" style={{ color: theme.secondaryText }}>
           {blog.date} · {blog.reading_time}

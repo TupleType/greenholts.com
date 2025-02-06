@@ -2,7 +2,7 @@
 
 import React from "react";
 import "./TalksCard.css";
-import { Fade } from "react-swift-reveal";
+import Fade from "@/components/Fade/Fade";
 import dynamic from "next/dynamic";
 import ExportedImage from "next-image-export-optimizer";
 
@@ -21,7 +21,7 @@ export default function TalksCard({ talk }) {
   const imagePath = `/images/${talk.logo}`;
 
   return (
-    <Fade right duration={1000}>
+    <Fade direction="right" duration={1000}>
       <div
         className="talk-card-div"
         onClick={handleClick}
