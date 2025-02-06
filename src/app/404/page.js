@@ -5,6 +5,7 @@ import "./Error.css";
 import theme from "@/app/theme";
 import AsiImage from "../../../public/images/pablo.jpg";
 import ExportedImage from "next-image-export-optimizer";
+import Link from "next/link";
 
 export default function Error() {
   return (
@@ -21,8 +22,8 @@ export default function Error() {
           alt="Asi not found"
           className="error-class-img"
         />
-        <a
-          href="/home"
+        <Link
+          href="/"
           className="main-button"
           style={{
             color: theme.body,
@@ -32,7 +33,7 @@ export default function Error() {
           }}
         >
           Go Home
-        </a>
+        </Link>
       </div>
       <Footer />
     </div>

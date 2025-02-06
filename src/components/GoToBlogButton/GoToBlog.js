@@ -11,12 +11,7 @@ export default function GoToBlog(props) {
     <Fade left duration={1000}>
       <div className="btn-div">
         <Button
-          text={
-            <>
-              <span className="btn">Go To Blog</span>
-            </>
-          }
-          newTab={true}
+          text={<span className="btn">Go To Blog</span>}
           href="/blog"
         ></Button>
       </div>

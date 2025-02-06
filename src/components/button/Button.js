@@ -1,6 +1,7 @@
 import React from "react";
 import "./Button.css";
 import theme from "@/app/theme";
+import Link from "next/link";
 
 const onMouseEnter = (event, color, bgColor) => {
   const el = event.target;
@@ -17,7 +18,7 @@ const onMouseOut = (event, color, bgColor) => {
 export default function Button({ text, className, href, newTab }) {
   return (
     <div className={className}>
-      <a
+      <Link
         className="main-button"
         href={href}
         target={newTab && "_blank"}
@@ -30,7 +31,7 @@ export default function Button({ text, className, href, newTab }) {
         onMouseOut={(event) => onMouseOut(event, theme.body, theme.text)}
       >
         {text}
-      </a>
+      </Link>
     </div>
   );
 }
