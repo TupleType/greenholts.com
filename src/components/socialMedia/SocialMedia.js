@@ -44,6 +44,7 @@ export default function socialMedia() {
             className={`icon-button`}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label={media.name}
           >
             <IconWrapper $backgroundColor={media.backgroundColor}>
               <FontAwesomeIcon icon={`fab ${media.fontAwesomeIcon}`} />

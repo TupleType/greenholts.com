@@ -24,7 +24,7 @@ const TopBlog = ({ blog }) => {
             />
           </div>
           <div className={`top-blog-content ${theme.name}`}>
-            <h3 style={{ color: theme.text }}>{blog.title}</h3>
+            <h2 style={{ color: theme.text }}>{blog.title}</h2>
             <p className="top-blog-meta" style={{ color: theme.secondaryText }}>
               {blog.date} · {blog.reading_time}
             </p>
