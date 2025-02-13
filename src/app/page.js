@@ -14,6 +14,7 @@ import TopButton from "@/components/topButton/TopButton";
 import Projects from "@/containers/projects/Projects";
 import Talks from "@/containers/talks/Talks";
 import GoToBlog from "@/components/GoToBlogButton/GoToBlog";
+import "./page.css";
 
 const personId = `#author`;
 
@@ -98,19 +99,21 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-      <Header />
-      <Greeting />
-      <Skills />
-      <Projects />
-      <Talks />
-      <GoToBlog />
+    <>
+      <div className="home-container">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <Header />
+        <Greeting />
+        <Skills />
+        <Projects />
+        <Talks />
+        <GoToBlog />
+      </div>
       <Footer />
       <TopButton />
-    </div>
+    </>
   );
 }

@@ -1,7 +1,6 @@
 {
   "data": [
     {
-      "id": "1",
       "event": "DEFCON 31",
       "title": "The GitHub Actions Worm: Compromising GitHub repositories through the Actions dependency tree",
       "videoId": "j8ZiIOd53JU",
@@ -10,7 +9,6 @@
       "date": "2023-08-12"
     },
     {
-      "id": "2",
       "event": "RSA Conference 2023",
       "title": "Abuse of Repository Webhooks to Access Hundreds of Internal CI Systems",
       "videoId": "ntFjdiYJ9K8",
@@ -19,7 +17,6 @@
       "date": "2023-04-27"
     },
     {
-      "id": "3",
       "event": "Bsides Vegas 2022",
       "title": "Climbing the Production Mountain: Practical CI/CD Attacks Using CI/CD Goat",
       "videoId": "w-R2PT2jfdU",
@@ -28,7 +25,6 @@
       "date": "2022-08-09"
     },
     {
-      "id": "4",
       "event": "BsidesTLV 2024",
       "title": "The GitHub Actions Worm: Compromising GitHub repositories through the Actions dependency tree",
       "videoId": "ktL6FZFJ_Z8",
@@ -37,7 +33,6 @@
       "date": "2024-06-27"
     },
     {
-      "id": "5",
       "event": "Bsides Vegas 2023",
       "title": "The GitHub Actions Worm: Compromising GitHub repositories through the Actions dependency tree",
       "videoId": null,
@@ -47,7 +42,6 @@
       "date": "2023-08-08"
     },
     {
-      "id": "6",
       "event": "OWASP AppSec Israel 2023",
       "title": "How we abused repository webhooks to access hundreds of internal CI systems",
       "videoId": null,

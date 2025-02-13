@@ -20,15 +20,15 @@ export default function SkillSection() {
           <div key={i} className="skills-main-div">
             <div className="skills-text-div">
               <Fade direction="left" duration={1000}>
-                <h1 className="skills-heading" style={{ color: theme.text }}>
+                <h2 className="skills-heading" style={{ color: theme.text }}>
                   {skill.title}
-                </h1>
-                <h2
+                </h2>
+                <span
                   className="skills-heading"
                   style={{ color: theme.secondaryText }}
                 >
                   @{skill.companyName}
-                </h2>
+                </span>
               </Fade>
               <Fade direction="left" duration={1500}>
                 <SoftwareSkill logos={skill.softwareSkills} />

@@ -23,7 +23,7 @@ const TopBlog = ({ blog }) => {
               priority
             />
           </div>
-          <div className="blog-content">
+          <div className="top-blog-content">
             <h2 style={{ color: theme.text }}>{blog.title}</h2>
             <p className="top-blog-meta" style={{ color: theme.secondaryText }}>
               {blog.date} · {blog.reading_time}

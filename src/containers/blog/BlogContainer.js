@@ -8,15 +8,17 @@ import "./Blog.css";
 
 export default function BlogContainer({ blogs }) {
   return (
-    <div className="blog-container">
-      <Header />
-      <div className="blog-content-wrapper">
-        <BlogHeader />
-        <TopBlog blog={blogs.data[0]} />
-        <BlogGrid blogs={blogs.data.slice(1)} />
+    <>
+      <div className="blog-container">
+        <Header />
+        <div className="blog-content-wrapper">
+          <BlogHeader />
+          <TopBlog blog={blogs.data[0]} />
+          <BlogGrid blogs={blogs.data.slice(1)} />
+        </div>
       </div>
       <Footer />
       <TopButton />
-    </div>
+    </>
   );
 }

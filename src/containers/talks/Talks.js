@@ -9,7 +9,7 @@ export default function Talks() {
       <h1 className="talks-title">Talks</h1>
       <div className="talks-cards-div">
         {TalksData.data.map((talk) => {
-          return <TalksCard talk={talk} key={talk.id} />;
+          return <TalksCard talk={talk} key={`${talk.event}-${talk.title}`} />;
         })}
       </div>
     </div>

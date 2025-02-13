@@ -44,12 +44,16 @@ export default function Greeting() {
     </div>
   );
 
-  // If rendering on potato devices, don't animate
-  return windowWidth <= 420 ? (
-    content
-  ) : (
-    <Fade direction="bottom" duration={2000} distance="40px">
-      {content}
-    </Fade>
-  );
+  // Don't animate on mobile devices
+  if (windowWidth === 0) {
+    return;
+  } else if (windowWidth <= 420) {
+    return content;
+  } else {
+    return (
+      <Fade direction="bottom" duration={2000} distance="40px">
+        {content}
+      </Fade>
+    );
+  }
 }

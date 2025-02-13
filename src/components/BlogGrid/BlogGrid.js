@@ -9,7 +9,12 @@ const BlogGrid = ({ blogs }) => {
   return (
     <div className="blog-grid">
       {blogs.map((blog) => (
-        <Fade direction="bottom" duration={2000} distance="20px">
+        <Fade
+          direction="bottom"
+          duration={2000}
+          distance="20px"
+          key={blog.title}
+        >
           <BlogCard blog={blog} />
         </Fade>
       ))}

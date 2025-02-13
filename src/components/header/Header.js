@@ -9,60 +9,46 @@ import { greeting } from "../../portfolio.js";
 import theme from "@/app/theme";
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const pathname = usePathname();
-
-  const handleMenuToggle = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
 
   return (
     <Fade direction="top" duration={1000} distance="20px">
-      <div>
-        <header className={`header ${isMenuOpen ? "menu-open" : ""}`}>
-          <Link href="/" className="logo">
-            <span className="logo-name" style={{ color: theme.text }}>
-              &gt;&gt;&gt; {greeting.name}
-            </span>
-            <span style={{ color: theme.text }}></span>
-          </Link>
-          <input
-            className="menu-btn"
-            type="checkbox"
-            id="menu-btn"
-            onChange={handleMenuToggle}
-            checked={isMenuOpen}
-          />
-          <label className="menu-icon" htmlFor="menu-btn">
-            <span className="navicon"></span>
-          </label>
-          <ul className="menu" style={{ backgroundColor: theme.body }}>
-            <li>
-              <Link
-                href="/"
-                style={{
-                  color: theme.text,
-                  fontWeight: pathname === "/" ? "bold" : "normal",
-                }}
-                className="menu-item"
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/blog"
-                style={{
-                  color: theme.text,
-                  fontWeight: pathname === "/blog" ? "bold" : "normal",
-                }}
-                className="menu-item"
-              >
-                Blog
-              </Link>
-            </li>
-          </ul>
-        </header>
+      <div className="header">
+        <Link href="/" className="logo">
+          <span className="logo-name" style={{ color: theme.text }}>
+            &gt;&gt;&gt; {greeting.name}
+          </span>
+        </Link>
+        <input className="menu-btn" type="checkbox" id="menu-btn" />
+        <label className="menu-icon" htmlFor="menu-btn">
+          <span className="navicon"></span>
+        </label>
+        <ul className="menu" style={{ backgroundColor: theme.body }}>
+          <li>
+            <Link
+              href="/"
+              style={{
+                color: theme.text,
+                fontWeight: pathname === "/" ? "bold" : "normal",
+              }}
+              className="menu-item"
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/blog"
+              style={{
+                color: theme.text,
+                fontWeight: pathname === "/blog" ? "bold" : "normal",
+              }}
+              className="menu-item"
+            >
+              Blog
+            </Link>
+          </li>
+        </ul>
       </div>
     </Fade>
   );
