@@ -16,19 +16,16 @@ const LogoFont = Source_Code_Pro({
 
 export const metadata = {
   metadataBase: new URL(seo.og.url),
-  description: seo.description,
   canonical: "/",
   openGraph: {
     type: seo.og.type,
     url: seo.og.url,
-    description: seo.description,
     locale: seo.og.locale,
     siteName: seo.og.title,
   },
   twitter: {
     card: seo.og.title,
     site: seo.xHandle,
-    description: seo.description,
   },
 };
 

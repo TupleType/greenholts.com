@@ -13,7 +13,6 @@ const greeting = {
 //SEO Related settings
 const seo = {
   title: "Asi Greenholts",
-  description: greeting.subTitle,
   xHandle: "@TupleType",
   og: {
     type: "website",

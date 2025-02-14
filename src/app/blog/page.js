@@ -1,6 +1,8 @@
 import blogs from "@/shared/blogs.json";
 import { greeting, seo } from "@/portfolio.js";
 import BlogContainer from "@/containers/blog/BlogContainer";
+import Script from "next/script";
+import { blogSettings } from "@/portfolio";
 
 const title = "Asi Greenholts - Blog";
 
@@ -56,11 +58,14 @@ const jsonLd = getJsonld();
 
 export const metadata = {
   title: title,
+  description: blogSettings.subtitle,
   openGraph: {
     title: title,
+    description: blogSettings.subtitle,
   },
   twitter: {
     title: title,
+    description: blogSettings.subtitle,
   },
 };
 
