@@ -2,6 +2,8 @@ import blogs from "@/shared/blogs.json";
 import { greeting, seo } from "@/portfolio.js";
 import BlogContainer from "@/containers/blog/BlogContainer";
 
+const title = "Asi Greenholts - Blog";
+
 function getJsonld() {
   const formatDate = (dateStr) => {
     const date = new Date(dateStr);
@@ -53,19 +55,20 @@ function getJsonld() {
 const jsonLd = getJsonld();
 
 export const metadata = {
-  title: "Asi Greenholts - Blog",
+  title: title,
   openGraph: {
-    title: "Asi Greenholts - Blog",
+    title: title,
   },
   twitter: {
-    title: "Asi Greenholts - Blog",
+    title: title,
   },
 };
 
 export default function Blog() {
   return (
     <>
-      <script
+      <Script
+        strategy="beforeInteractive"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />

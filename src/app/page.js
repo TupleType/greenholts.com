@@ -15,6 +15,7 @@ import Projects from "@/containers/projects/Projects";
 import Talks from "@/containers/talks/Talks";
 import GoToBlog from "@/components/GoToBlogButton/GoToBlog";
 import "./page.css";
+import Script from "next/script";
 
 const personId = `#author`;
 
@@ -100,11 +101,12 @@ export const metadata = {
 export default function Home() {
   return (
     <>
+      <Script
+        strategy="beforeInteractive"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="home-container">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
         <Header />
         <Greeting />
         <Skills />
