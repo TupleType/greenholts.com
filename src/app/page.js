@@ -50,6 +50,7 @@ function getJsonld() {
 
   const openSource = projects.map((project) => {
     return {
+      "@context": "https://schema.org/",
       "@type": "SoftwareSourceCode",
       name: project.name,
       description: project.description,
@@ -61,10 +62,11 @@ function getJsonld() {
     };
   });
 
-  const jsonld = {
-    "@context": "https://schema.org/",
-    "@graph": [
-      {
+  const jsonld = [
+    {
+      "@context": "https://schema.org/",
+      "@type": "ProfilePage",
+      mainEntity: {
         "@type": "Person",
         "@id": personId,
         name: greeting.name,
@@ -80,9 +82,9 @@ function getJsonld() {
         knowsAbout: knowsAbout,
         performerIn: performerIn,
       },
-      ...openSource,
-    ],
-  };
+    },
+    ...openSource,
+  ];
   return jsonld;
 }
 
