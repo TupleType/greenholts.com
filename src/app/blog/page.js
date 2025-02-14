@@ -1,5 +1,5 @@
 import blogs from "@/shared/blogs.json";
-import { greeting, seo } from "@/portfolio.js";
+import { whoami, seo } from "@/portfolio.js";
 import BlogContainer from "@/containers/blog/BlogContainer";
 import Script from "next/script";
 import { blogSettings } from "@/portfolio";
@@ -37,7 +37,7 @@ function getJsonld() {
       datePublished: formatDate(blog.date),
       author: {
         "@type": "Person",
-        name: greeting.name,
+        name: whoami.name,
         url: seo.og.url,
       },
       url: blog.link,
@@ -46,8 +46,8 @@ function getJsonld() {
   const jsonld = {
     "@context": "https://schema.org/",
     "@type": "Blog",
-    name: greeting.name,
-    description: greeting.description,
+    name: whoami.name,
+    description: whoami.description,
     url: `${seo.og.url}blog`,
     blogPost: blogPosts,
   };

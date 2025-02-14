@@ -1,8 +1,8 @@
 import {
-  greeting,
+  whoami,
   seo,
   socialMediaLinks,
-  skills,
+  whatido,
   talks,
   projects,
 } from "@/portfolio.js";
@@ -30,7 +30,7 @@ function getJsonld() {
       socialMedia.push(media.link);
     });
 
-  const knowsAbout = skills.data[0].softwareSkills.map((skill) => {
+  const knowsAbout = whatido.softwareSkills.map((skill) => {
     return skill.skillName;
   });
 
@@ -69,16 +69,16 @@ function getJsonld() {
       mainEntity: {
         "@type": "Person",
         "@id": personId,
-        name: greeting.name,
+        name: whoami.name,
         url: seo.og.url,
         sameAs: socialMedia,
-        jobTitle: skills.data[0].title,
+        jobTitle: whatido.title,
         worksFor: {
           "@type": "Organization",
-          name: skills.data[0].title,
+          name: whatido.title,
         },
         image: seo.og.image,
-        description: greeting.description,
+        description: whoami.description,
         knowsAbout: knowsAbout,
         performerIn: performerIn,
       },
@@ -92,14 +92,14 @@ const jsonLd = getJsonld();
 
 export const metadata = {
   title: "Asi Greenholts - Home",
-  description: greeting.subTitle,
+  description: whoami.subTitle,
   openGraph: {
     title: "Asi Greenholts - Home",
-    description: greeting.subTitle,
+    description: whoami.subTitle,
   },
   twitter: {
     title: "Asi Greenholts - Home",
-    description: greeting.subTitle,
+    description: whoami.subTitle,
   },
 };
 

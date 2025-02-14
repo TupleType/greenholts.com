@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import "./Greeting.css";
 import SocialMedia from "@/components/socialMedia/SocialMedia";
-import { greeting } from "@/portfolio";
+import { whoami } from "@/portfolio";
 import Fade from "@/components/Fade/Fade";
 import FeelingProud from "./FeelingProud";
 import theme from "@/app/theme";
@@ -23,13 +23,13 @@ export default function Greeting() {
         <div className="greeting-text-div">
           <div>
             <h1 className="greeting-text" style={{ color: theme.text }}>
-              {greeting.title}
+              {whoami.title}
             </h1>
             <p
               className="greeting-text-p subTitle"
               style={{ color: theme.secondaryText }}
             >
-              {greeting.subTitle}
+              {whoami.subTitle}
             </p>
             <SocialMedia theme={theme} />
             <div className="portfolio-repo-btn-div">

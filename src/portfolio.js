@@ -1,16 +1,7 @@
 import projectsData from "./shared/projects.json";
 import TalksData from "./shared/talks.json";
 
-//Home Page
-const greeting = {
-  title: "Who Am I",
-  name: "Asi Greenholts",
-  subTitle:
-    "With 9+ years in cybersecurity, I thrive on solving complex problems. My experience includes SOC management, incident response, security architecture and security engineering. I enjoy developing software and automating things that can be done much faster manually.",
-  linkedin_link: "https://www.linkedin.com/in/asi-greenholts",
-};
-
-//SEO Related settings
+// SEO Related settings
 const seo = {
   title: "Asi Greenholts",
   xHandle: "@TupleType",
@@ -19,6 +10,15 @@ const seo = {
     url: "https://greenholts.com/",
     locale: "en_US",
   },
+};
+
+// Home Page
+const whoami = {
+  title: "Who Am I",
+  name: "Asi Greenholts",
+  subTitle:
+    "I've always been curious about computers and how they work, which led to a career of 9+ years in cybersecurity. I enjoy starting never ending projects and automating things that can be done much faster manually.",
+  button_link: "https://www.linkedin.com/in/asi-greenholts",
 };
 
 const socialMediaLinks = [
@@ -42,55 +42,51 @@ const socialMediaLinks = [
   },
 ];
 
-const skills = {
-  data: [
+const whatido = {
+  title: "Security Research",
+  companyName: "Palo Alto Networks",
+  fileName: "Research",
+  skills: [
+    "🔎 Turning Application Security from 'meh' to 'whoa!' one line of code at a time.",
+    "🔎 Writes code to break code, then writes more code to protect it. Basically, I'm my own worst enemy.",
+    "🔎 I read about 400 cyber stories a month because paranoia is just good security practice.",
+  ],
+  softwareSkills: [
     {
-      title: "Security Research",
-      companyName: "Palo Alto Networks",
-      fileName: "Research",
-      skills: [
-        "🔎 Turning Application Security from 'meh' to 'whoa!' one line of code at a time.",
-        "🔎 Writes code to break code, then writes more code to protect it. Basically, I'm my own worst enemy.",
-        "🔎 Reads about 400 cyber stories a month because paranoia is just good security practice.",
-      ],
-      softwareSkills: [
-        {
-          skillName: "Python",
-          fontAwesomeClassname: "logos:python",
-        },
-        {
-          skillName: "React",
-          fontAwesomeClassname: "logos:react",
-        },
-        {
-          skillName: "Jenkins",
-          fontAwesomeClassname: "vscode-icons:file-type-jenkins",
-        },
-        {
-          skillName: "Langchain",
-          fontAwesomeClassname: "simple-icons:langchain",
-        },
-        {
-          skillName: "AWS",
-          fontAwesomeClassname: "logos:aws",
-        },
-        {
-          skillName: "and more...",
-          fontAwesomeClassname: "fa-ellipsis-h",
-        },
-      ],
+      skillName: "Python",
+      fontAwesomeClassname: "logos:python",
+    },
+    {
+      skillName: "React",
+      fontAwesomeClassname: "logos:react",
+    },
+    {
+      skillName: "Jenkins",
+      fontAwesomeClassname: "vscode-icons:file-type-jenkins",
+    },
+    {
+      skillName: "Langchain",
+      fontAwesomeClassname: "simple-icons:langchain",
+    },
+    {
+      skillName: "AWS",
+      fontAwesomeClassname: "logos:aws",
+    },
+    {
+      skillName: "and more...",
+      fontAwesomeClassname: "fa-ellipsis-h",
     },
   ],
 };
 
-//Blog Page
+const projects = projectsData.data;
+const talks = TalksData.data;
+
+// Blog Page
 const blogSettings = {
   title: "Security Research & Insights",
   subtitle: '"Cybersecurity is a team sport"',
 };
-
-const projects = projectsData.data;
-const talks = TalksData.data;
 
 // CVEs
 // https://www.oracle.com/security-alerts/cpuoct2021.html
@@ -100,8 +96,8 @@ export {
   projects,
   talks,
   seo,
-  greeting,
+  whoami,
   socialMediaLinks,
-  skills,
+  whatido,
   blogSettings,
 };

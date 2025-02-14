@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react";
 import Button from "@/components/button/Button";
-import { greeting } from "@/portfolio";
+import { whoami } from "@/portfolio";
 
 export default function ConnectButton() {
   return (
@@ -12,7 +12,7 @@ export default function ConnectButton() {
         </>
       }
       newTab={true}
-      href={greeting.linkedin_link}
+      href={whoami.button_link}
     />
   );
 }

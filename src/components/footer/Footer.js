@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import { greeting } from "../../portfolio.js";
+import { whoami } from "../../portfolio.js";
 import SocialMedia from "../socialMedia/SocialMedia";
 import theme from "@/app/theme";
 
@@ -13,7 +13,7 @@ export default function Footer() {
             <div className="footer-logo">
               <span style={{ color: theme.text }}>&gt;&gt;&gt; </span>
               <span className="logo-name" style={{ color: theme.text }}>
-                {greeting.name}
+                {whoami.name}
               </span>
               <span style={{ color: theme.text }}></span>
             </div>

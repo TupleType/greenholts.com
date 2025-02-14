@@ -5,7 +5,7 @@ import "./Header.css";
 import Fade from "@/components/Fade/Fade";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { greeting } from "../../portfolio.js";
+import { whoami } from "../../portfolio.js";
 import theme from "@/app/theme";
 
 const Header = () => {
@@ -16,7 +16,7 @@ const Header = () => {
       <div className="header">
         <Link href="/" className="logo">
           <span className="logo-name" style={{ color: theme.text }}>
-            &gt;&gt;&gt; {greeting.name}
+            &gt;&gt;&gt; {whoami.name}
           </span>
         </Link>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
