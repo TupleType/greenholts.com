@@ -1,0 +1,21 @@
+.connectButton {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.icon {
+    margin-right: 1rem;
+    font-size: 1.25rem;
+}
+
+@media (min-width: 1920px) {
+    .connectButton {
+        font-size: 1.75rem;
+    }
+
+    .icon {
+        font-size: 2rem;
+        margin-right: 1.25rem;
+    }
+}

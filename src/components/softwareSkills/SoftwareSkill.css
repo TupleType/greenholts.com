@@ -1,21 +1,35 @@
 .dev-icons {
-  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
   list-style: none;
   font-size: 3rem;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  text-align: left;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .software-skill-inline {
-  display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   font-family: var(--font-jakarta);
+  width: fit-content;
+  height: fit-content;
 }
 
 .software-skill-inline>i {
   color: #868e96;
+}
+
+.software-skill-inline>svg {
+  width: auto;
+  height: 0.8em;
 }
 
 .software-skill-inline>i:hover {
@@ -26,29 +40,53 @@
   height: 48px;
 }
 
-@media (max-width: 1440px) {
-  .software-skill-inline {
-    margin-right: 18px;
-    margin-bottom: 18px;
+.tooltip-portal {
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 4px;
+  font-size: 14px;
+  white-space: nowrap;
+  pointer-events: none;
+  font-family: var(--font-jakarta);
+  z-index: 1000;
+}
+
+/* Remove the old tooltip styles */
+.software-skill-inline::before {
+  display: none;
+}
+
+.software-skill-inline:hover::before {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (min-width: 480px) {
+  .software-skill-inline>svg {
+    height: 0.9em;
   }
 }
 
-@media (max-width: 1024px) {
-  .software-skill-inline {
-    margin-right: 15px;
-    margin-bottom: 15px;
+@media (min-width: 768px) {
+  .software-skill-inline>svg {
+    height: 1em;
   }
 }
 
-@media (max-width: 834px) {
+@media (min-width: 1024px) {
+  .software-skill-inline>svg {
+    height: 1.1em;
+  }
+
   .dev-icons {
-    text-align: center;
+    justify-content: flex-start;
+    margin: 0;
   }
 }
 
-@media (max-width: 440px) {
-  .dev-icons {
-    font-size: 2.5rem;
-    text-align: center;
+@media (min-width: 1920px) {
+  .software-skill-inline>svg {
+    height: 1.3em;
   }
 }

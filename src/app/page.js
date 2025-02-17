@@ -8,7 +8,7 @@ import {
 } from "@/portfolio.js";
 import Header from "@/components/header/Header";
 import Greeting from "@/containers/greeting/Greeting";
-import Skills from "@/containers/skills/Skills";
+import Skills from "@/containers/whatido/Whatido";
 import Footer from "@/components/footer/Footer";
 import TopButton from "@/components/topButton/TopButton";
 import Projects from "@/containers/projects/Projects";
@@ -31,7 +31,7 @@ function getJsonld() {
     });
 
   const knowsAbout = whatido.softwareSkills.map((skill) => {
-    return skill.skillName;
+    return skill.iconName;
   });
 
   const performerIn = talks.map((talk) => {
@@ -111,8 +111,10 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <div className="home-container">
+      <div className="home-header">
         <Header />
+      </div>
+      <div className="home-container">
         <Greeting />
         <Skills />
         <Projects />

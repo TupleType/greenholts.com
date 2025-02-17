@@ -1,15 +1,8 @@
 .btn-div {
-  padding-top: 30px;
   display: flex;
   justify-content: center;
 }
 
 .btn {
   font-size: 1.5rem;
-}
-
-@media (max-width: 440px) {
-  .btn-div {
-    padding-bottom: 60px;
-  }
 }

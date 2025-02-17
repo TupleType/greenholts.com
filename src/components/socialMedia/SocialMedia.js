@@ -31,6 +31,12 @@ const IconWrapper = styled.span.withConfig({
   &:hover {
     background-color: ${() => theme.text};
   }
+
+  @media (min-width: 1920px) {
+    width: 4.2rem;
+    height: 4.2rem;
+    padding: 1rem;
+  }
 `;
 
 export default function socialMedia() {

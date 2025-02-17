@@ -39,13 +39,13 @@ export default function TalksCard({ talk }) {
             />
             <h2 className="talk-name">{talk.event}</h2>
           </div>
-          <h3 className="talk-subtitle">{talk.title}</h3>
+          <h3 className="talk-subtitle text">{talk.title}</h3>
         </div>
         <div className="talk-content">
           {talk.videoId ? (
             <YouTubeEmbed videoid={talk.videoId} params="controls=0" />
           ) : (
-            <p className="talk-abstract">{talk.abstract}</p>
+            <p className="talk-abstract subText">{talk.abstract}</p>
           )}
         </div>
       </div>

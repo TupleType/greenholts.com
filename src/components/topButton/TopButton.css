@@ -1,16 +1,20 @@
 #topButton {
   visibility: hidden;
   position: fixed;
-  bottom: 5rem;
-  right: 0.5rem;
+  bottom: 1rem;
+  right: 0.75rem;
   cursor: pointer;
-  padding: 15px;
+  width: 3rem;
+  height: 3rem;
   outline: none;
-  border-radius: 2rem;
+  border-radius: 50%;
   font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@media (min-width: 440px) {
+/* @media (min-width: 440px) {
   #topButton {
     right: 1rem;
     padding: 12px;
@@ -41,4 +45,4 @@
     padding: 16px;
     font-size: 1.6rem;
   }
-}
+} */

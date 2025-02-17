@@ -18,28 +18,21 @@ export default function Greeting() {
   }, []);
 
   const content = (
-    <div className="greet-main" id="greeting">
-      <div className="greeting-main">
-        <div className="greeting-text-div">
-          <div>
-            <h1 className="greeting-text" style={{ color: theme.text }}>
-              {whoami.title}
-            </h1>
-            <p
-              className="greeting-text-p subTitle"
-              style={{ color: theme.secondaryText }}
-            >
-              {whoami.subTitle}
-            </p>
-            <SocialMedia theme={theme} />
-            <div className="portfolio-repo-btn-div">
-              <ConnectButton />
-            </div>
-          </div>
+    <div className="greeting-main">
+      <div className="greeting-content">
+        <h1 className="title" style={{ color: theme.text }}>
+          {whoami.title}
+        </h1>
+        <p className="greeting-text-p text" style={{ color: theme.secondaryText }}>
+          {whoami.subTitle}
+        </p>
+        <SocialMedia />
+        <div className="button-greeting-div">
+          <ConnectButton />
         </div>
-        <div className="greeting-image-div">
-          <FeelingProud theme={theme} />
-        </div>
+      </div>
+      <div className="greeting-image-div">
+        <FeelingProud/>
       </div>
     </div>
   );

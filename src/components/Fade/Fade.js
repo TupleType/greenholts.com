@@ -5,7 +5,13 @@ import "./Fade.css";
 const getDirectionClass = (direction) => `fade-${direction}`;
 
 const Fade = memo(
-  ({ children, direction = "left", duration = 500, distance = "200px" }) => {
+  ({
+    children,
+    direction = "left",
+    duration = 500,
+    distance = "200px",
+    className = "",
+  }) => {
     const [ref, inView] = useInView({
       triggerOnce: true,
       threshold: 0.05,
@@ -18,7 +24,8 @@ const Fade = memo(
       }
     }, [inView]);
 
-    const className = `fade ${getDirectionClass(direction)}`;
+    const baseClassName = `fade ${getDirectionClass(direction)}`;
+    const finalClassName = `${baseClassName} ${className}`.trim();
     const style = {
       "--fade-duration": `${duration}ms`,
       "--fade-distance": distance,
@@ -30,7 +37,7 @@ const Fade = memo(
           ref(element);
           containerRef.current = element;
         }}
-        className={className}
+        className={finalClassName}
         style={style}
       >
         {children}
@@ -41,7 +48,8 @@ const Fade = memo(
     return (
       prevProps.direction === nextProps.direction &&
       prevProps.duration === nextProps.duration &&
-      prevProps.distance === nextProps.distance
+      prevProps.distance === nextProps.distance &&
+      prevProps.className === nextProps.className
     );
   }
 );

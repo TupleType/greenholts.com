@@ -17,10 +17,8 @@
   }
 }
 
-.main {
-  padding: 20px 10px;
+.talks-main {
   margin: 0px auto;
-  margin-top: 4rem;
 }
 
 .talks-title {
@@ -28,6 +26,8 @@
   line-height: normal;
   font-family: var(--font-jakarta);
   text-align: left;
+  margin: 0;
+  margin-bottom: 2rem;
 }
 
 .talks-cards-div {

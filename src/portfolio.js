@@ -47,34 +47,60 @@ const whatido = {
   companyName: "Palo Alto Networks",
   fileName: "Research",
   skills: [
-    "🔎 Turning Application Security from 'meh' to 'whoa!' one line of code at a time.",
-    "🔎 Writes code to break code, then writes more code to protect it. Basically, I'm my own worst enemy.",
+    "🔎 I research software development processes, exploring how they can be attacked and how to protect them.",
+    "🔎 I research how AI can be used to solve security challenges.",
     "🔎 I read about 400 cyber stories a month because paranoia is just good security practice.",
   ],
   softwareSkills: [
     {
-      skillName: "Python",
-      fontAwesomeClassname: "logos:python",
+      iconName: "Python",
+      iconifyName: "logos:python",
+    },
+    
+    {
+      iconName: "Langchain",
+      iconifyName: "simple-icons:langchain",
+      color: "#1C3B3B",
+    },
+    
+    {
+      iconName: "GitHub",
+      iconifyName: "logos:github-icon",
     },
     {
-      skillName: "React",
-      fontAwesomeClassname: "logos:react",
+      iconName: "GitLab",
+      iconifyName: "logos:gitlab",
+    },
+
+    {
+      iconName: "Jenkins",
+      iconifyName: "vscode-icons:file-type-jenkins",
     },
     {
-      skillName: "Jenkins",
-      fontAwesomeClassname: "vscode-icons:file-type-jenkins",
+      iconName: "CircleCI",
+      iconifyName: "logos:circleci",
     },
     {
-      skillName: "Langchain",
-      fontAwesomeClassname: "simple-icons:langchain",
+      iconName: "Artifactory",
+      iconifyName: "simple-icons:jfrog",
+      color: "#41BF47",
     },
     {
-      skillName: "AWS",
-      fontAwesomeClassname: "logos:aws",
+      iconName: "AWS",
+      iconifyName: "logos:aws",
     },
     {
-      skillName: "and more...",
-      fontAwesomeClassname: "fa-ellipsis-h",
+      iconName: "GCP",
+      iconifyName: "logos:google-cloud",
+    },
+    {
+      iconName: "Azure",
+      iconifyName: "logos:microsoft-azure",
+    },
+    {
+      iconName: "Feedly",
+      iconifyName: "simple-icons:feedly",
+      color: "#2bb24c",
     },
   ],
 };

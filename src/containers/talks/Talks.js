@@ -5,7 +5,7 @@ import TalksData from "@/shared/talks.json";
 
 export default function Talks() {
   return (
-    <div className="main" id="talks">
+    <div className="talks-main">
       <h1 className="talks-title">Talks</h1>
       <div className="talks-cards-div">
         {TalksData.data.map((talk) => {

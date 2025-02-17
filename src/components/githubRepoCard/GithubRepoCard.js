@@ -38,7 +38,7 @@ export default function GithubRepoCard({ repo }) {
             </svg>
             <h2 className="repo-name">{repo.name}</h2>
           </div>
-          <p className="repo-description">{repo.description}</p>
+          <p className="repo-description subText">{repo.description}</p>
           <div className="repo-stats">
             <div className="repo-left-stat">
               {repo.primaryLanguage !== null && (

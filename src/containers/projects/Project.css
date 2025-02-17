@@ -1,13 +1,10 @@
-.project-title {
-  font-size: 60px;
-  line-height: normal;
-  font-family: var(--font-jakarta);
-  text-align: left;
-}
-
-.startup-project-text img {
-  max-width: 100%;
-  height: auto;
+.projects-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
 }
 
 .repo-cards-div-main {
@@ -16,7 +13,6 @@
   gap: 1rem 1rem;
 }
 
-/* Add this to ensure each card has same height */
 .repo-card-div {
   height: 100%;
   display: flex;
@@ -30,8 +26,14 @@
   align-items: flex-end;
 }
 
-/* Media Query */
-@media (max-width: 1380px) {
+@media (min-width: 1024px) {
+  .projects-main {
+    align-items: flex-start;
+  }
+
+}
+
+/* @media (max-width: 1380px) {
   .project-title {
     font-size: 50px;
   }
@@ -56,4 +58,4 @@
   #opensource.main {
     margin-top: 0;
   }
-}
+} */

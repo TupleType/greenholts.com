@@ -1,30 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import "./SoftwareSkill.css";
-import { OverlayTrigger, Tooltip } from "react-bootstrap";
 import { Icon } from "@iconify/react";
+import TooltipPortal from "./TooltipPortal";
 
 const SoftwareSkill = ({ logos }) => {
+  const [tooltipAnchor, setTooltipAnchor] = useState(null);
+  const [tooltipText, setTooltipText] = useState("");
+
   return (
     <div>
       <div className="software-skills-main-div">
         <ul className="dev-icons">
           {logos.map((logo) => (
-            <OverlayTrigger
-              key={logo.skillName}
-              placement="top"
-              overlay={
-                <Tooltip id={`tooltip-${logo.skillName}`}>
-                  <strong>{logo.skillName}</strong>
-                </Tooltip>
-              }
+            <li
+              key={logo.iconName}
+              className="software-skill-inline"
+              onMouseEnter={(e) => {
+                setTooltipAnchor(e.currentTarget);
+                setTooltipText(logo.iconName);
+              }}
+              onMouseLeave={() => setTooltipAnchor(null)}
             >
-              <li className="software-skill-inline" name={logo.skillName}>
-                <Icon icon={logo.fontAwesomeClassname} />
-              </li>
-            </OverlayTrigger>
+              <Icon icon={logo.iconifyName} style={{ color: logo.color }} />
+            </li>
           ))}
         </ul>
       </div>
+      <TooltipPortal text={tooltipText} anchorEl={tooltipAnchor} />
     </div>
   );
 };

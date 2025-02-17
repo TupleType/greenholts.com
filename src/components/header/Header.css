@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 0px;
+  padding-top: 1rem;
   width: 100%;
   flex-wrap: wrap;
   position: relative;
@@ -28,7 +28,7 @@
 }
 
 .header .logo {
-  font-size: 1.5em;
+  font-size: 1.25rem;
   text-decoration: none;
   line-height: normal;
   margin: 0;
@@ -120,7 +120,13 @@
   top: 0;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 480px) {
+  .header .logo {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .header li {
     float: left;
   }
@@ -132,5 +138,23 @@
 
   .header .menu-icon {
     display: none;
+  }
+
+  .header .logo {
+    font-size: 1.75rem;
+  }
+
+  .header li a {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .header .logo {
+    font-size: 2.5rem;
+  }
+
+  .header li a {
+    font-size: 2rem;
   }
 }

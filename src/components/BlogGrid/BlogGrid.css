@@ -17,6 +17,6 @@
 @media (max-width: 834px) {
   .blog-grid {
     grid-template-columns: 1fr;
-    margin-bottom: 2rem; 
+    margin-bottom: 2rem;
   }
 }
