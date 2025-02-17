@@ -50,23 +50,14 @@
   margin-bottom: 0;
 }
 
-@media (max-width: 1440px) {
-  .footer-div {
-    max-width: 85%;
-  }
-}
-
 @media (max-width: 1024px) {
-  .footer-div {
-    max-width: 95%;
-  }
 
   .footer-logo {
     font-size: 1.4em;
   }
 }
 
-@media (max-width: 834px) {
+@media (min-width: 768px) {
   .footer-top {
     gap: 1rem;
   }
@@ -83,7 +74,6 @@
 
 @media (max-width: 440px) {
   .footer-div {
-    max-width: 100%;
     padding: 0 1rem;
   }
 

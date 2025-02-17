@@ -17,7 +17,7 @@ const whoami = {
   title: "Who Am I",
   name: "Asi Greenholts",
   subTitle:
-    "I've always been curious about computers and how they work, which led to a career of 9+ years in cybersecurity. I enjoy starting never ending projects and automating things that can be done much faster manually.",
+    "I've always been curious about computers and how they work, which led to a decade-long career in cybersecurity. I enjoy starting never ending projects and automating things that can be done much faster manually.",
   button_link: "https://www.linkedin.com/in/asi-greenholts",
 };
 
@@ -56,13 +56,16 @@ const whatido = {
       iconName: "Python",
       iconifyName: "logos:python",
     },
-    
+    {
+      iconName: "TypeScript",
+      iconifyName: "logos:typescript-icon",
+    },
     {
       iconName: "Langchain",
       iconifyName: "simple-icons:langchain",
       color: "#1C3B3B",
     },
-    
+
     {
       iconName: "GitHub",
       iconifyName: "logos:github-icon",

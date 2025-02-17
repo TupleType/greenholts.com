@@ -14,35 +14,18 @@
   justify-content: center;
 }
 
-/* @media (min-width: 440px) {
+@media (min-width: 768px) {
   #topButton {
-    right: 1rem;
-    padding: 12px;
-    bottom: 4rem;
-    font-size: 1.5rem;
+    bottom: 4.5rem;
+    right: 0.5rem;
   }
 }
 
-@media (min-width: 834px) {
+@media (min-width: 1920px) {
   #topButton {
-    right: 1.5rem;
-    padding: 14px;
-    font-size: 1.4rem;
+    width: 5rem;
+    height: 5rem;
+    bottom: 6rem;
+    font-size: 2.53rem;
   }
 }
-
-@media (min-width: 1024px) {
-  #topButton {
-    right: 2rem;
-    padding: 15px;
-    font-size: 1.5rem;
-  }
-}
-
-@media (min-width: 1440px) {
-  #topButton {
-    right: 2.5rem;
-    padding: 16px;
-    font-size: 1.6rem;
-  }
-} */
