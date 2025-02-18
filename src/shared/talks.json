@@ -1,7 +1,7 @@
 {
   "data": [
     {
-      "event": "DEFCON 31",
+      "event": "DEFCON 31 (2023)",
       "title": "The GitHub Actions Worm: Compromising GitHub repositories through the Actions dependency tree",
       "videoId": "j8ZiIOd53JU",
       "abstract": null,

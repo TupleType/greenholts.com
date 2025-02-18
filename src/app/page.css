@@ -2,7 +2,6 @@
     width: 90%;
     margin: 0 auto;
     padding: 0;
-    overflow-x: hidden;
     display: grid;
     gap: 4rem;
     padding-bottom: 4rem;
@@ -77,6 +76,11 @@
     .home-container {
         gap: 8rem;
     }
+
+    .home-container>*:nth-last-child(2) {
+        margin-bottom: -4rem;
+    }
+
 }
 
 @media screen and (min-width: 1920px) {
@@ -94,6 +98,9 @@
 
     .home-container {
         gap: 12rem;
-        padding-bottom: 4rem;
+    }
+
+    .home-container>*:nth-last-child(2) {
+        margin-bottom: -8rem;
     }
 }

@@ -37,9 +37,9 @@ export default function TalksCard({ talk }) {
               height={40}
               alt={talk.logo}
             />
-            <h2 className="talk-name">{talk.event}</h2>
+            <h2 className="event-name base-title">{talk.event}</h2>
           </div>
-          <h3 className="talk-subtitle text">{talk.title}</h3>
+          <h3 className="talk-title base-title">{talk.title}</h3>
         </div>
         <div className="talk-content">
           {talk.videoId ? (

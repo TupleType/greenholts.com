@@ -1,62 +1,37 @@
-.talk-header-title {
-  font-size: 56px;
-  font-weight: 400;
-  line-height: 0px;
-}
-
-@media (max-width: 834px) {
-  .talk-header-title {
-    font-size: 30px;
-    text-align: center;
-  }
-
-  .talk-header-subtitle {
-    font-size: 16px;
-    line-height: normal;
-    text-align: center;
-  }
-}
-
 .talks-main {
   margin: 0px auto;
   width: 100%;
 }
 
 .talks-title {
-  font-size: 60px;
-  line-height: normal;
-  font-family: var(--font-jakarta);
-  text-align: left;
   margin: 0;
-  margin-bottom: 2rem;
 }
 
 .talks-cards-div {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: minmax(0, 1fr);
   gap: 1rem 1rem;
   margin-top: 2rem;
 }
 
-@media (max-width: 1380px) {
-  .talks-title {
-    font-size: 50px;
+@media (min-width: 768px) {
+  .talks-cards-div {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-@media (max-width: 834px) {
-  .talks-title {
-    font-size: 30px;
-    text-align: center;
+@media (min-width: 1024px) {
+  .talks-main {
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 1920px) {
+  .talks-main {
+    align-items: flex-start;
   }
 
   .talks-cards-div {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
-}
-
-@media (max-width: 440px) {
-  #talks.main {
-    margin-top: 20px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
