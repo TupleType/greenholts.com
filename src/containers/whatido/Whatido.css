@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  width: 100%;
 }
 
 .skills-content {
@@ -45,4 +46,5 @@
   .skills-main-div {
     gap: 16rem;
   }
+  
 }

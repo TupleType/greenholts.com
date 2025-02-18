@@ -58,4 +58,8 @@
     .skills-heading {
         font-size: 3rem;
     }
+
+    .skills-content-div {
+        gap: 4rem;
+    }
 }

@@ -2,7 +2,7 @@
   color: rgb(88, 96, 105);
   background-color: rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 30px -15px;
-  padding: 2rem;
+  padding: 1.25rem;
   cursor: pointer;
   aspect-ratio: unset;
   height: auto;
@@ -51,33 +51,8 @@
   text-overflow: ellipsis;
   flex: 1;
   min-width: 0;
-  min-height: 80px;
   display: flex;
   align-items: center;
-}
-
-@media (max-width: 1440px) {
-  .talk-name {
-    font-size: 22px;
-    min-height: 64px;
-  }
-}
-
-@media (max-width: 834px) {
-  .talk-name {
-    white-space: normal;
-    font-size: 20px;
-    line-height: 32px;
-    min-height: 64px;
-  }
-}
-
-@media (max-width: 440px) {
-  .talk-name {
-    font-size: 20px;
-    line-height: 28px;
-    min-height: 56px;
-  }
 }
 
 .talk-name-header {
@@ -112,24 +87,32 @@
   -webkit-box-orient: vertical;
 }
 
-.dark-card-mode {
-  background-color: #171c28;
-  color: #ffffff;
+@media (min-width: 768px) {
+  .talk-card-div {
+    padding: 1.5rem;
+  }
 }
 
-.dark-card-mode p {
-  color: #ffffff;
+/* @media (max-width: 1440px) {
+  .talk-name {
+    font-size: 22px;
+    min-height: 64px;
+  }
 }
 
-.dark-card-mode .talk-svg {
-  fill: #ffffff;
+@media (max-width: 834px) {
+  .talk-name {
+    white-space: normal;
+    font-size: 20px;
+    line-height: 32px;
+    min-height: 64px;
+  }
 }
 
-.dark-card-mode .talk-subtitle {
-  color: #c5c5c5;
-}
-
-.dark-card-mode:hover {
-  background-color: #55198b !important;
-  box-shadow: 0px 0px 16px #d9dbdf;
-}
+@media (max-width: 440px) {
+  .talk-name {
+    font-size: 20px;
+    line-height: 28px;
+    min-height: 56px;
+  }
+} */

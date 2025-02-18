@@ -37,13 +37,17 @@
 }
 
 .subText {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-family: var(--font-jakarta);
 }
 
 @media screen and (min-width: 480px) {
     .home-header {
         padding-bottom: 4rem;
+    }
+
+    .subText {
+        font-size: 1.25rem;
     }
 }
 
@@ -54,6 +58,10 @@
 
     .text {
         font-size: 1.5rem;
+    }
+
+    .subText {
+        font-size: 1rem;
     }
 }
 
@@ -78,6 +86,10 @@
 
     .text {
         font-size: 2.25rem;
+    }
+
+    .subText {
+        font-size: 1.75rem;
     }
 
     .home-container {
