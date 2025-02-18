@@ -114,17 +114,20 @@
 
   .repo-description {
     -webkit-line-clamp: 3;
-    height: 4.5em;
   }
 }
 
 @media (min-width: 1024px) {
   .repo-name {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
   }
 
   .repo-description.subText {
-    font-size: 0.8rem;
+    font-size: 1rem;
+  }
+
+  .repo-description {
+    -webkit-line-clamp: 2;
   }
 }
 

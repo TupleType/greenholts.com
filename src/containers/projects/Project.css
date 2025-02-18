@@ -25,6 +25,9 @@
   .projects-main {
     align-items: flex-start;
   }
+}
+
+@media (min-width: 1920px) {
 
   .repo-cards-div-main {
     grid-template-columns: repeat(3, minmax(0, 1fr));
