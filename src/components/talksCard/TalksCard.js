@@ -21,7 +21,7 @@ export default function TalksCard({ talk }) {
   const imagePath = `/images/${talk.logo}`;
 
   return (
-    <Fade direction="right" duration={1000}>
+    <Fade direction="left" duration={1000}>
       <div
         className="talk-card-div"
         onClick={handleClick}

@@ -8,7 +8,7 @@ import "./GoToBlog.css";
 export default function GoToBlog(props) {
   const theme = props.theme;
   return (
-    <Fade direction="left" duration={1000}>
+    <Fade direction="right" duration={1000}>
       <div className="btn-div">
         <Button
           text={<span className="btn">Go To Blog</span>}

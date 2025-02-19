@@ -18,7 +18,7 @@ export default function GithubRepoCard({ repo }) {
   }
 
   return (
-    <Fade direction="left" duration={1000}>
+    <Fade direction="right" duration={1000}>
       <div
         className="repo-card-div"
         key={repo.id}
