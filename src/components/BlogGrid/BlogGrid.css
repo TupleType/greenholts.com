@@ -1,22 +1,22 @@
 .blog-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 20px;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
   width: 100%;
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 768px) {
   .blog-grid {
     grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 2rem;
   }
 }
 
-@media (max-width: 834px) {
+@media (min-width: 1920px) {
   .blog-grid {
-    grid-template-columns: 1fr;
-    margin-bottom: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
   }
 }

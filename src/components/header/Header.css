@@ -99,24 +99,24 @@
   display: none;
 }
 
-.header .menu-btn:checked~.menu {
+.header .menu-btn:checked ~ .menu {
   max-height: 370px;
 }
 
-.header .menu-btn:checked~.menu-icon .navicon {
+.header .menu-btn:checked ~ .menu-icon .navicon {
   background: transparent;
 }
 
-.header .menu-btn:checked~.menu-icon .navicon:before {
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
   transform: rotate(-45deg);
 }
 
-.header .menu-btn:checked~.menu-icon .navicon:after {
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
   transform: rotate(45deg);
 }
 
-.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
 
@@ -151,7 +151,7 @@
 
 @media screen and (min-width: 1920px) {
   .header .logo {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .header li a {

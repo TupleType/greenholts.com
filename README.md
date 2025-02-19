@@ -55,3 +55,13 @@ Then run
 ```bash
 node git_data_fetcher.mjs
 ```
+
+## Update Social Preview Images
+
+To capture social preview images (1280x640):
+
+1. Open Chrome DevTools and click the `Device Toggle Toolbar` button (Ctrl+Shift+M).
+2. Click the `Dimensions` dropdown and select `Edit...`.
+3. Add a custom device with dimensions 1280x640.
+4. Select your new custom device from the `Dimensions` dropdown.
+5. Click the three-dot menu (⋮) in DevTools and select `Capture screenshot`.

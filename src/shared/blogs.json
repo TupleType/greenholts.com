@@ -21,8 +21,8 @@
       "link": "https://www.paloaltonetworks.com/blog/prisma-cloud/repository-webhook-abuse-access-ci-cd-systems-at-scale/"
     },
     {
-      "title": "How to secure your Open Source Project – A quick guide for developers",
-      "description": "This blog is designed to provide developers with a practical, straightforward guide to secure their open source (OS) projects. We’ll cover the most important aspects of securing OS projects, and provide practical guidelines using GitHub as the source control management system (SCM), and GitHub Actions as the CI/CD solution.",
+      "title": "How to Secure Your Open Source Project - A Quick Guide for Developers",
+      "description": "This blog is designed to provide developers with a practical, straightforward guide to secure their open source (OS) projects. We'll cover the most important aspects of securing OS projects, and provide practical guidelines using GitHub as the source control management system (SCM), and GitHub Actions as the CI/CD solution.",
       "date": "Dec 8, 2022",
       "reading_time": "9 min read",
       "thumbnail": "secure-os-thumbnail.png",
@@ -31,7 +31,7 @@
       "link": "https://web.archive.org/web/20230601060727/https://www.cidersecurity.io/blog/research/how-to-secure-your-open-source-project-a-quick-guide-for-developers/"
     },
     {
-      "title": "Optimizing CI/CD Credential Hygiene – A Comparison of CI/CD Solutions",
+      "title": "Optimizing CI/CD Credential Hygiene - A Comparison of CI/CD Solutions",
       "description": "Attackers are always on the lookout to gain access to credentials, which are a critical asset to protect and are widespread throughout the organization. This is highly relevant in CI/CD systems, which are a vital part of the engineering ecosystem.",
       "date": "Jul 6, 2022",
       "reading_time": "7 min read",
@@ -41,8 +41,8 @@
       "link": "https://web.archive.org/web/20230928082723/https://www.cidersecurity.io/blog/research/optimizing-ci-cd-credential-hygiene-a-comparison-of-ci-cd-solutions/"
     },
     {
-      "title": "CI/CD Goat – A deliberately vulnerable CI/CD environment",
-      "description": "Today we are excited to announce the launch of “CI/CD Goat” – a deliberately vulnerable CI/CD environment which allows engineers, security practitioners, and curious hackers to learn and experience the major CI/CD security risks out there.",
+      "title": "CI/CD Goat - A Deliberately Vulnerable CI/CD Environment",
+      "description": "Today we are excited to announce the launch of “CI/CD Goat” - a deliberately vulnerable CI/CD environment which allows engineers, security practitioners, and curious hackers to learn and experience the major CI/CD security risks out there.",
       "date": "Apr 7, 2022",
       "reading_time": "3 min read",
       "thumbnail": "cicd-goat-thumbnail.png",
@@ -51,7 +51,7 @@
       "link": "https://web.archive.org/web/20230601062424/https://www.cidersecurity.io/blog/research/ci-cd-goat/"
     },
     {
-      "title": "How to Secure Jenkins’ Default Build Authorization Configuration",
+      "title": "How to Secure Jenkins' Default Build Authorization Configuration",
       "description": "The default build authorization configuration in Jenkins — controlling the permissions allocated to pipelines — is insecure and is often left unmodified in production environments. To address this issue, you should use the “Authorize Project” and the “Role-Based Authorization Strategy” plugins to define secure build authorization configurations.",
       "date": "Feb 17, 2022",
       "reading_time": "11 min read",

@@ -2,9 +2,13 @@
   width: 90%;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  flex: 1;
 }
 
 .blog-content-wrapper {
-  box-sizing: border-box;
+  max-width: 1200px;
+  align-items: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }

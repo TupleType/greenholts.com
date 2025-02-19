@@ -4,15 +4,11 @@ import theme from "@/app/theme";
 import ExportedImage from "next-image-export-optimizer";
 
 export default function BlogCard({ blog }) {
-  const handleClick = () => window.open(blog.link, "_blank");
-
   return (
-    <article
+    <div
       className="blog-card"
-      onClick={handleClick}
-      role="article"
+      onClick={() => window.open(blog.link, "_blank")}
       aria-label={blog.title}
-      tabIndex={0}
     >
       <div className="blog-image">
         <ExportedImage
@@ -32,6 +28,6 @@ export default function BlogCard({ blog }) {
           {blog.description}
         </p>
       </div>
-    </article>
+    </div>
   );
 }

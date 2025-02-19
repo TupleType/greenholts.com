@@ -113,7 +113,7 @@ const talks = TalksData.data;
 
 // Blog Page
 const blogSettings = {
-  title: "Security Research & Insights",
+  title: "Security Research Blog",
   subtitle: '"Cybersecurity is a team sport"',
 };
 
