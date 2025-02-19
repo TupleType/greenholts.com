@@ -28,8 +28,9 @@ function getJsonld() {
     return `${year}-${month}-${day}T${hours}:${minutes}:${seconds}${tzSign}${tzHours}:${tzMinutes}`;
   };
 
-  const blogPosts = blogs.data.map((blog) => {
+  const jsonld = blogs.data.map((blog) => {
     return {
+      "@context": "https://schema.org/",
       "@type": "BlogPosting",
       headline: blog.title,
       description: blog.description,
@@ -43,14 +44,6 @@ function getJsonld() {
       url: blog.link,
     };
   });
-  const jsonld = {
-    "@context": "https://schema.org/",
-    "@type": "Blog",
-    name: whoami.name,
-    description: whoami.description,
-    url: `${seo.og.url}blog`,
-    blogPost: blogPosts,
-  };
   return jsonld;
 }
 
