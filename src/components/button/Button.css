@@ -23,7 +23,6 @@
   outline: none;
 }
 
-/* Media Query */
 @media (min-width: 1920px) {
   .main-button {
     border-radius: 1rem;

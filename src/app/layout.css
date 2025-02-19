@@ -11,13 +11,14 @@ body {
 }
 
 html {
-  font-family: var(--font-jakarta), BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-family: var(--font-jakarta), BlinkMacSystemFont, -apple-system,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 body {
   align-items: center;
-  background: #EDF9FE;
-  color: #001C55;
+  background: #edf9fe;
+  color: #001c55;
   display: flex;
   transition: all 0.25s linear;
   margin: 0;
@@ -35,5 +36,4 @@ body {
   flex-direction: column;
   overflow-x: hidden;
   position: relative;
-  /* Adjust this value based on your footer height */
 }

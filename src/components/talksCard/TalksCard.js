@@ -43,7 +43,11 @@ export default function TalksCard({ talk }) {
         </div>
         <div className="talk-content">
           {talk.videoId ? (
-            <YouTubeEmbed videoid={talk.videoId} params="controls=0" />
+            <YouTubeEmbed
+              videoid={talk.videoId}
+              params="controls=0"
+              height={"auto"}
+            />
           ) : (
             <p className="talk-abstract subText">{talk.abstract}</p>
           )}

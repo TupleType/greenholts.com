@@ -1,36 +1,39 @@
+.error-header {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+}
+
 .error-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  width: 100%;
-  margin: 0;
+  width: 90%;
+  margin: 0 auto;
   padding: 0;
+  justify-content: center;
+  flex: 1;
 }
 
 .error-class {
-  flex: 1 0 auto;
-  width: 90%;
-  margin: auto;
+  width: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 2rem 0;
+  margin: 2rem 0;
+  gap: 2rem;
 }
 
 .error-404 {
-  padding-top: 3rem;
-  font-size: 4em;
+  font-size: 2rem;
   margin-top: 1rem;
   line-height: 1.2;
+  margin: 0;
 }
 
 .error-class-img {
   width: 100%;
-  max-width: 100%;
-  margin: 2rem;
-  object-fit: contain;
+  height: auto;
 }
 
 .main-button {
@@ -47,59 +50,30 @@
   text-decoration: none;
   font-family: var(--font-jakarta);
   display: block;
-  margin-top: 20px;
   font-size: 18px;
   cursor: pointer;
   letter-spacing: 2px;
-  margin-bottom: 3rem;
 }
 
-footer {
-  flex-shrink: 0;
-  width: 100%;
-}
-
-@media (min-width: 1440px) {
-  .error-class-img {
-    max-height: 800px;
-  }
-}
-
-@media (max-width: 1024px) {
+@media (min-width: 768px) {
   .error-404 {
-    padding-top: 1rem;
-    font-size: 4em;
-    margin: 0;
+    font-size: 4rem;
+  }
+
+  .error-class {
+    gap: 4rem;
   }
 }
 
-@media (max-width: 768px) {
-  .error-404 {
-    font-size: 2.5em;
-  }
-
+@media (min-width: 1024px) {
   .error-class-img {
-    max-height: 350px;
+    width: 60%;
+    height: auto;
   }
 }
 
-@media (max-width: 425px) {
-  .error-404 {
-    font-size: 2em;
-    padding-top: 5px;
-    margin-bottom: 20px;
-  }
-
-  .error-class-img {
-    max-height: 200px;
-    margin: 30px 0;
-  }
-
+@media (min-width: 1920px) {
   .main-button {
-    padding: 12px 24px;
-    font-size: 16px;
-    font-weight: bold;
-    transition: all 0.3s ease-in-out;
-    margin-bottom: 2rem;
+    font-size: 2rem;
   }
 }

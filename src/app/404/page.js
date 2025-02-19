@@ -9,33 +9,37 @@ import Link from "next/link";
 
 export default function Error() {
   return (
-    <div className="error-container">
-      <Header />
-      <div className="error-class">
-        <h1 className="error-404">
-          Page Not Found
-          <br />
-          (404)
-        </h1>
-        <ExportedImage
-          src={AsiImage}
-          alt="Asi not found"
-          className="error-class-img"
-        />
-        <Link
-          href="/"
-          className="main-button"
-          style={{
-            color: theme.body,
-            backgroundColor: theme.text,
-            border: `solid 1px ${theme.text}`,
-            display: "inline-flex",
-          }}
-        >
-          Go Home
-        </Link>
+    <>
+      <div className="error-header">
+        <Header />
+      </div>
+      <div className="error-container">
+        <div className="error-class">
+          <h1 className="error-404">
+            Page Not Found
+            <br />
+            (404)
+          </h1>
+          <ExportedImage
+            src={AsiImage}
+            alt="Asi not found"
+            className="error-class-img"
+          />
+          <Link
+            href="/"
+            className="main-button"
+            style={{
+              color: theme.body,
+              backgroundColor: theme.text,
+              border: `solid 1px ${theme.text}`,
+              display: "inline-flex",
+            }}
+          >
+            Go Home
+          </Link>
+        </div>
       </div>
       <Footer />
-    </div>
+    </>
   );
 }

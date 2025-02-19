@@ -23,16 +23,16 @@
   height: fit-content;
 }
 
-.software-skill-inline>i {
+.software-skill-inline > i {
   color: #868e96;
 }
 
-.software-skill-inline>svg {
+.software-skill-inline > svg {
   width: auto;
   height: 0.8em;
 }
 
-.software-skill-inline>i:hover {
+.software-skill-inline > i:hover {
   color: #645beb;
 }
 
@@ -52,7 +52,6 @@
   z-index: 1000;
 }
 
-/* Remove the old tooltip styles */
 .software-skill-inline::before {
   display: none;
 }
@@ -63,19 +62,19 @@
 }
 
 @media (min-width: 480px) {
-  .software-skill-inline>svg {
+  .software-skill-inline > svg {
     height: 0.9em;
   }
 }
 
 @media (min-width: 768px) {
-  .software-skill-inline>svg {
+  .software-skill-inline > svg {
     height: 1em;
   }
 }
 
 @media (min-width: 1024px) {
-  .software-skill-inline>svg {
+  .software-skill-inline > svg {
     height: 1.1em;
   }
 
@@ -86,7 +85,7 @@
 }
 
 @media (min-width: 1920px) {
-  .software-skill-inline>svg {
+  .software-skill-inline > svg {
     height: 1.3em;
   }
 }

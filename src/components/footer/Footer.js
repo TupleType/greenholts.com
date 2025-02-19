@@ -17,6 +17,15 @@ export default function Footer() {
               </span>
               <span style={{ color: theme.text }}></span>
             </div>
+            <a
+              href="https://github.com/TupleType/greenholts.com"
+              target="_blank"
+              rel="noreferrer"
+              className="footer-text"
+              style={{ color: theme.secondaryText }}
+            >
+              &lt;/&gt; View Source
+            </a>
             <div className="footer-social">
               <SocialMedia />
             </div>

@@ -1,7 +1,7 @@
 #topButton {
   visibility: hidden;
   position: fixed;
-  bottom: 1rem;
+  bottom: 0.5rem;
   right: 0.75rem;
   cursor: pointer;
   width: 3rem;
