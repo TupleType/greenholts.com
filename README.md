@@ -56,7 +56,7 @@ Then run
 node git_data_fetcher.mjs
 ```
 
-## Update Social Preview Images
+### Update Social Preview Images
 
 To capture social preview images (1280x640):
 

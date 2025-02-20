@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next dev",
     "lint": "next lint",
-    "prod": "next start",
+    "prod": "npx serve build",
     "export": "next build && next-image-export-optimizer"
   },
   "dependencies": {
@@ -29,7 +29,8 @@
     "dotenv": "^6.2.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
-    "prettier": "2.0.5"
+    "prettier": "2.0.5",
+    "serve": "^14.2.4"
   },
   "browserslist": {
     "production": [
