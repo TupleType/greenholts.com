@@ -1,31 +1,52 @@
 .main-button {
-  color: white;
+  color: var(--button-text-color);
+  background-color: var(--button-bg-color);
+  border: 1px solid var(--button-border-color);
   font-weight: 500;
-  line-height: 1.1;
   width: max-content;
   padding: 0.75rem 1rem;
   border-radius: 0.5rem;
   text-align: center;
   text-decoration: none;
-  font-family: var(--font-jakarta);
   display: block;
   font-size: 1.25rem;
   cursor: pointer;
   letter-spacing: 2px;
   outline: none;
+  transition: all 0.3s ease;
 }
 
 .main-button:hover {
-  transition: ease-in 0.3s;
+  color: var(--button-hover-text-color);
+  background-color: var(--button-hover-bg-color);
 }
 
-.main-button:focus {
-  outline: none;
+.main-button:hover .button-content,
+.main-button:hover {
+  color: inherit;
+  background-color: transparent;
+}
+
+.button-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.button-icon {
+  margin-right: 1rem;
+  font-size: 1.25rem;
 }
 
 @media (min-width: 1920px) {
   .main-button {
     border-radius: 1rem;
     padding: 1.25rem 1.5rem;
+  }
+
+  .button-icon {
+    font-size: 2rem;
+    margin-right: 1.25rem;
   }
 }
