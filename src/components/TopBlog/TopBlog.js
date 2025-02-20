@@ -2,13 +2,13 @@
 
 import React from "react";
 import "./TopBlog.css";
-import Fade from "@/components/Fade/Fade";
+import ResponsiveAnimation from "@/components/ResponsiveAnimation/ResponsiveAnimation";
 import theme from "@/app/theme";
 import ExportedImage from "next-image-export-optimizer";
 
 const TopBlog = ({ blog }) => {
   return (
-    <Fade direction="top" duration={2000} distance="20px">
+    <ResponsiveAnimation direction="top" duration={2000} distance="20px">
       <div
         className="top-blog-card"
         onClick={() => window.open(blog.link, "_blank")}
@@ -33,7 +33,7 @@ const TopBlog = ({ blog }) => {
           </p>
         </div>
       </div>
-    </Fade>
+    </ResponsiveAnimation>
   );
 };
 

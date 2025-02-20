@@ -1,0 +1,19 @@
+.mobileContent {
+  display: none;
+}
+
+.desktopContent {
+  display: none;
+}
+
+@media (max-width: 420px) {
+  .mobileContent {
+    display: block;
+  }
+}
+
+@media (min-width: 421px) {
+  .desktopContent {
+    display: block;
+  }
+}

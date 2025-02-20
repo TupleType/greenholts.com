@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   flex: 1;
+  padding-bottom: 1.25rem;
 }
 
 .blog-content-wrapper {
@@ -11,4 +12,10 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+}
+
+@media (min-width: 1920px) {
+  .blog-container {
+    padding-bottom: 2rem;
+  }
 }

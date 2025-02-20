@@ -127,3 +127,9 @@
     font-size: 1rem;
   }
 }
+
+@media (min-width: 1920px) {
+  .top-blog-card {
+    margin-bottom: 2rem;
+  }
+}
