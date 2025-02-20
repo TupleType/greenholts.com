@@ -3,10 +3,11 @@
 import Greeting from "@/containers/greeting/Greeting";
 import dynamic from "next/dynamic";
 import "./HomeContainer.css";
+import Header from "@/components/header/Header";
 
-const Header = dynamic(() => import("@/components/header/Header"), {
-  ssr: false,
-});
+// const Header = dynamic(() => import("@/components/header/Header"), {
+//   ssr: false,
+// });
 const Skills = dynamic(() => import("@/containers/whatido/Whatido"), {
   ssr: false,
 });

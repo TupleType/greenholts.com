@@ -3,17 +3,13 @@
 import dynamic from "next/dynamic";
 import TopBlog from "@/components/TopBlog/TopBlog";
 import "./BlogContainer.css";
+import Header from "@/components/header/Header";
+import BlogHeader from "@/components/BlogHeader/BlogHeader";
 
-const Header = dynamic(() => import("@/components/header/Header"), {
-  ssr: false,
-});
 const Footer = dynamic(() => import("@/components/footer/Footer"), {
   ssr: false,
 });
 const TopButton = dynamic(() => import("@/components/topButton/TopButton"), {
-  ssr: false,
-});
-const BlogHeader = dynamic(() => import("@/components/BlogHeader/BlogHeader"), {
   ssr: false,
 });
 const BlogGrid = dynamic(() => import("@/components/BlogGrid/BlogGrid"), {
