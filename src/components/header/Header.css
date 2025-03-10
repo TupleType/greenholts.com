@@ -23,8 +23,29 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px 20px;
+  padding: 1rem;
   text-decoration: none;
+  position: relative;
+}
+
+.header li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  /* Default for mobile: thinner line */
+  background-color: currentColor;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.header li a:hover::after,
+.header li a.active::after {
+  width: 5%;
+  /* Default for mobile: narrower width */
+  left: 47.5%;
+  /* Adjusted to keep it centered */
 }
 
 .header .logo {
@@ -146,6 +167,17 @@
 
   .header li a {
     font-size: 1.25rem;
+  }
+
+  /* Larger underline for desktop screens */
+  .header li a::after {
+    height: 3px;
+  }
+
+  .header li a:hover::after,
+  .header li a.active::after {
+    width: 25%;
+    left: 37.5%;
   }
 }
 

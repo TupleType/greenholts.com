@@ -31,7 +31,7 @@ const Header = () => {
                 color: theme.text,
                 fontWeight: pathname === "/" ? "bold" : "normal",
               }}
-              className="menu-item"
+              className={`menu-item ${pathname === "/" ? "active" : ""}`}
             >
               Home
             </Link>
@@ -43,7 +43,7 @@ const Header = () => {
                 color: theme.text,
                 fontWeight: pathname === "/blog" ? "bold" : "normal",
               }}
-              className="menu-item"
+              className={`menu-item ${pathname === "/blog" ? "active" : ""}`}
             >
               Blog
             </Link>
