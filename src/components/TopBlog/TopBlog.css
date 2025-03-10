@@ -132,4 +132,17 @@
   .top-blog-card {
     margin-bottom: 2rem;
   }
+
+  .top-blog-content {
+    padding: 3rem;
+    justify-content: center;
+  }
+
+  .top-blog-description {
+    font-size: 1.5rem;
+  }
+
+  .top-blog-content h2 {
+    font-size: 2rem;
+  }
 }

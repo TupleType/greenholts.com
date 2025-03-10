@@ -100,19 +100,19 @@
 
 @media (min-width: 1024px) {
   .base-title {
-    font-size: 1.25rem;
+    font-size: 1rem;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
   }
 
   .talk-name-div {
     /* 3 lines of text + image size + gap */
-    min-height: calc((1.5em * 2) + 40px + 1.5rem);
+    min-height: calc((1.5em * 2) + 40px + 1rem);
   }
 }
 
 @media (min-width: 1920px) {
   .base-title {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }

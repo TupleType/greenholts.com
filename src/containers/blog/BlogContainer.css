@@ -1,5 +1,6 @@
 .blog-container {
   width: 90%;
+  max-width: 1920px;
   margin: 0;
   padding: 0;
   flex: 1;
@@ -7,7 +8,6 @@
 }
 
 .blog-content-wrapper {
-  max-width: 1200px;
   align-items: center;
   margin: 0 auto;
   display: flex;

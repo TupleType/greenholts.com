@@ -83,3 +83,13 @@
     font-size: 1rem;
   }
 }
+
+@media screen and (min-width: 1920px) {
+  .blog-content h2 {
+    font-size: 1.75rem;
+  }
+
+  .blog-description {
+    font-size: 1.25rem;
+  }
+}
