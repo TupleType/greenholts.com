@@ -16,7 +16,7 @@ export default function Button({ text, href, newTab, icon }) {
 
   return (
     <Link
-      className="main-button"
+      className="main-button subText"
       href={href}
       target={newTab && "_blank"}
       style={{

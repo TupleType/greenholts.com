@@ -22,6 +22,7 @@ export default function Home() {
   return (
     <>
       <Script
+        id="home-jsonld"
         strategy="beforeInteractive"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

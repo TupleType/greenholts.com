@@ -27,7 +27,42 @@ export default function TalksCard({ talk }) {
         onClick={handleClick}
         style={{ cursor: talk.link ? "pointer" : "default" }}
       >
+        <div className="talk-content">
+          {talk.videoId ? (
+            <YouTubeEmbed
+              videoid={talk.videoId}
+              params="controls=0"
+              height={"auto"}
+            />
+          ) : (
+            <div
+              style={{
+                width: "100%",
+                height: "100%",
+                position: "relative",
+                aspectRatio: "16/9",
+              }}
+            >
+              <ExportedImage
+                className="talk-video"
+                src={`/images/${talk.thumbnail}`}
+                width={talk.thumbnail_width}
+                height={talk.thumbnail_height}
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "contain",
+                }}
+                alt={talk.event}
+              />
+            </div>
+          )}
+        </div>
         <div className="talk-name-div">
+          <h2 className="talk-title base-title">{talk.title}</h2>
           <div className="talk-title-row">
             {/* Width and height are defined in css */}
             <ExportedImage
@@ -37,20 +72,8 @@ export default function TalksCard({ talk }) {
               height={40}
               alt={talk.logo}
             />
-            <h2 className="event-name base-title">{talk.event}</h2>
+            <h3 className="event-name base-title">{talk.event}</h3>
           </div>
-          <h3 className="talk-title base-title">{talk.title}</h3>
-        </div>
-        <div className="talk-content">
-          {talk.videoId ? (
-            <YouTubeEmbed
-              videoid={talk.videoId}
-              params="controls=0"
-              height={"auto"}
-            />
-          ) : (
-            <p className="talk-abstract subText">{talk.abstract}</p>
-          )}
         </div>
       </div>
     </Fade>
