@@ -92,4 +92,8 @@
   .blog-description {
     font-size: 1.25rem;
   }
+
+  .blog-meta {
+    font-size: 1rem;
+  }
 }
