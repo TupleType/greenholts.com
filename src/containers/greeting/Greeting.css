@@ -29,7 +29,7 @@
   line-height: 1.75;
   font-weight: 600;
   margin: 0;
-  text-align: center;
+  text-align: left;
   word-wrap: break-word;
 }
 
@@ -43,10 +43,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-  }
-
-  .greeting-text-p {
-    text-align: left;
   }
 
   .button-greeting-div {

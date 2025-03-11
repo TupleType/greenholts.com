@@ -1,5 +1,5 @@
 .home-container {
-  width: 90%;
+  width: 80%;
   max-width: 1920px;
   margin: 0 auto;
   padding: 0;
@@ -38,7 +38,7 @@
 }
 
 .subText {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-family: var(--font-jakarta);
 }
 
@@ -53,6 +53,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .home-container {
+    width: 90%;
+  }
+
   .title {
     font-size: 3rem;
   }
