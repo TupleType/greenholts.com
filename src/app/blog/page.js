@@ -1,7 +1,6 @@
 import blogs from "@/shared/blogs.json";
 import { whoami, seo } from "@/portfolio.js";
 import BlogContainer from "@/containers/blog/BlogContainer";
-import Script from "next/script";
 import { blogSettings } from "@/portfolio";
 
 const title = "Asi Greenholts - Blog";
@@ -65,8 +64,7 @@ export const metadata = {
 export default function Blog() {
   return (
     <>
-      <Script
-        strategy="beforeInteractive"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />

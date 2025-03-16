@@ -1,5 +1,4 @@
 import { whoami } from "@/portfolio.js";
-import Script from "next/script";
 import { getJsonld } from "@/utils/jsonLdGenerator";
 import HomeContainer from "@/containers/home/HomeContainer";
 
@@ -21,9 +20,7 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <Script
-        id="home-jsonld"
-        strategy="beforeInteractive"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
