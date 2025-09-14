@@ -1,6 +1,16 @@
 {
   "data": [
     {
+      "title": "GitHub Actions Supply Chain Attack: A Targeted Attack on Coinbase Expanded to the Widespread tj-actions/changed-files Incident",
+      "description": "The recent compromise of the GitHub action tj-actions/changed-files and additional actions within the reviewdog organization has captured the attention of the GitHub community, marking another major software supply chain attack. Our team conducted an in-depth investigation into this incident and uncovered many more details about how the attack occurred and its timeline.",
+      "date": "Mar 20, 2025",
+      "reading_time": "26 min read",
+      "thumbnail": "tj-actions-thumbnail.jpg",
+      "thumbnail_width": "?",
+      "thumbnail_height": "?",
+      "link": "https://unit42.paloaltonetworks.com/github-actions-supply-chain-attack/"
+    },
+    {
       "title": "The GitHub Actions Worm: Compromising GitHub Repositories Through the Actions Dependency Tree",
       "description": "Learn how a novel attack vector in GitHub Actions allows attackers to distribute malware across repositories using a technique that exploits the actions dependency tree and puts countless open-source projects and internal repositories at risk. Get an in-depth look at the attack vectors, technical details and a real-world demo in this blog post highlighting our latest research.",
       "date": "Sep 14, 2023",
