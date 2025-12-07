@@ -72,7 +72,7 @@ const whatido = {
     },
     {
       iconName: "GitLab",
-      iconifyName: "logos:gitlab",
+      iconifyName: "logos:gitlab-icon",
     },
 
     {
