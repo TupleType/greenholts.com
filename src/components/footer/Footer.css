@@ -44,7 +44,7 @@
   text-align: center;
   font-weight: 400;
   margin: 0;
-  width: 100%;
+  width: fit-content;
 }
 
 .social-media-div {
