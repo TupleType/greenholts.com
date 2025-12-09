@@ -103,6 +103,7 @@
   .top-blog-card {
     grid-template-rows: none;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 2rem;
   }
 
   .top-blog-image {
@@ -110,27 +111,8 @@
   }
 
   .top-blog-content h2 {
-    font-size: 1.75rem;
+    font-size: 2rem;
     -webkit-line-clamp: 4;
-  }
-
-  .top-blog-content {
-    padding: 3rem;
-  }
-
-  .top-blog-description {
-    font-size: 1.25rem;
-    -webkit-line-clamp: 5;
-  }
-
-  .top-blog-meta {
-    font-size: 1rem;
-  }
-}
-
-@media (min-width: 1920px) {
-  .top-blog-card {
-    margin-bottom: 2rem;
   }
 
   .top-blog-content {
@@ -140,9 +122,10 @@
 
   .top-blog-description {
     font-size: 1.5rem;
+    -webkit-line-clamp: 5;
   }
 
-  .top-blog-content h2 {
-    font-size: 2rem;
+  .top-blog-meta {
+    font-size: 1rem;
   }
 }

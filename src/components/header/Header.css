@@ -181,7 +181,7 @@
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
   .header .logo {
     font-size: 2rem;
   }

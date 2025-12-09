@@ -84,7 +84,7 @@
   }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1440px) {
   .software-skill-inline > svg {
     height: 1.3em;
   }

@@ -32,7 +32,7 @@ const IconWrapper = styled.span.withConfig({
     background-color: ${() => theme.text};
   }
 
-  @media (min-width: 1920px) {
+  @media (min-width: 1440px) {
     width: 4.2rem;
     height: 4.2rem;
     padding: 1rem;

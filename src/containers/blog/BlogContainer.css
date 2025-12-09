@@ -1,6 +1,6 @@
 .blog-container {
   width: 90%;
-  max-width: 1920px;
+  max-width: 1440px;
   margin: 0;
   padding: 0;
   flex: 1;
@@ -14,7 +14,7 @@
   flex-direction: column;
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1440px) {
   .blog-container {
     padding-bottom: 2rem;
   }

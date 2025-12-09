@@ -84,7 +84,7 @@
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
   .blog-content h2 {
     font-size: 1.75rem;
   }

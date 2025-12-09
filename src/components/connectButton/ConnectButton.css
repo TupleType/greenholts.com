@@ -10,7 +10,7 @@
     font-size: 1.25rem;
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1440px) {
     .connectButton {
         font-size: 1.75rem;
     }

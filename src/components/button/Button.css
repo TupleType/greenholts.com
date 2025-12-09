@@ -37,7 +37,7 @@
   font-size: 1.25rem;
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1440px) {
   .main-button {
     border-radius: 1rem;
     padding: 1.25rem 1.5rem;
