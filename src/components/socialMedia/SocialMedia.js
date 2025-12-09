@@ -33,9 +33,9 @@ const IconWrapper = styled.span.withConfig({
   }
 
   @media (min-width: 1440px) {
-    width: 4.2rem;
-    height: 4.2rem;
-    padding: 1rem;
+    width: 3.8rem;
+    height: 3.8rem;
+    padding: 0.9rem;
   }
 `;
 

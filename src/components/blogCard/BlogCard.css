@@ -86,14 +86,14 @@
 
 @media screen and (min-width: 1440px) {
   .blog-content h2 {
-    font-size: 1.75rem;
+    font-size: 1.625rem;
   }
 
   .blog-description {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
 
   .blog-meta {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 }

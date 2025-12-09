@@ -105,16 +105,16 @@
   }
 
   .top-blog-content h2 {
-    font-size: 2rem;
+    font-size: 1.875rem;
   }
 
   .top-blog-content {
-    padding: 3rem;
+    padding: 2.5rem;
     justify-content: center;
   }
 
   .top-blog-description {
-    font-size: 1.5rem;
+    font-size: 1.375rem;
     -webkit-line-clamp: 5;
   }
 }

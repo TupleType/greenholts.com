@@ -90,14 +90,14 @@
 
 @media screen and (min-width: 1440px) {
   .title {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   .text {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   .subText {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
 }

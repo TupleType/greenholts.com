@@ -23,9 +23,9 @@
 
 @media (min-width: 1440px) {
   #topButton {
-    width: 5rem;
-    height: 5rem;
-    bottom: 6rem;
-    font-size: 2.53rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    bottom: 5.5rem;
+    font-size: 2.25rem;
   }
 }

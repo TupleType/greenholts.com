@@ -129,15 +129,15 @@
 
 @media (min-width: 1440px) {
   .repo-name {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   .repo-svg {
-    width: 1.5rem;
-    height: 2rem;
+    width: 1.4rem;
+    height: 1.8rem;
   }
 
   .repo-stats p {
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
 }

@@ -66,10 +66,10 @@
 
 @media (min-width: 1440px) {
   .greeting-content {
-    gap: 2rem;
+    gap: 1.75rem;
   }
 
   .greeting-main {
-    gap: 16rem;
+    gap: 12rem;
   }
 }

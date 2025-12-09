@@ -183,10 +183,10 @@
 
 @media screen and (min-width: 1440px) {
   .header .logo {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   .header li a {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
