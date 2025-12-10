@@ -32,15 +32,15 @@
   }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1440px) {
   .social-media-div {
-    font-size: 2.5em;
+    font-size: 2.25em;
   }
 
   .icon-button i {
-    font-size: 1.6rem;
-    height: 3.2rem;
-    width: 3.2rem;
-    line-height: 3.2rem;
+    font-size: 1.5rem;
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
   }
 }

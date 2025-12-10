@@ -27,7 +27,7 @@
   }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1440px) {
 
   .repo-cards-div-main {
     grid-template-columns: repeat(3, minmax(0, 1fr));

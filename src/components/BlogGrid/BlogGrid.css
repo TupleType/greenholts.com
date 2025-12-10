@@ -13,7 +13,7 @@
   }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1440px) {
   .blog-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;

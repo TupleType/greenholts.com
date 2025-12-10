@@ -64,14 +64,12 @@
   }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1440px) {
   .greeting-content {
-    gap: 2rem;
+    gap: 1.75rem;
   }
 
-  @media (min-width: 1920px) {
-    .greeting-main {
-      gap: 16rem;
-    }
+  .greeting-main {
+    gap: 12rem;
   }
 }

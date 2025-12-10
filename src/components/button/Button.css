@@ -37,14 +37,14 @@
   font-size: 1.25rem;
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1440px) {
   .main-button {
-    border-radius: 1rem;
-    padding: 1.25rem 1.5rem;
+    border-radius: 0.875rem;
+    padding: 1.125rem 1.375rem;
   }
 
   .button-icon {
-    font-size: 2rem;
-    margin-right: 1.25rem;
+    font-size: 1.75rem;
+    margin-right: 1.125rem;
   }
 }

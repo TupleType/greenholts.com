@@ -6,7 +6,7 @@
 
 .footer-div {
   width: 90%;
-  max-width: 1920px;
+  max-width: 1440px;
   margin: 0 auto;
   position: relative;
 }
@@ -63,12 +63,12 @@
   }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1440px) {
   .footer-logo {
-    font-size: 1.5rem;
+    font-size: 1.375rem;
   }
 
   .footer-text {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
 }

@@ -54,12 +54,12 @@
   }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1440px) {
   .skills-heading {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
 
   .skills-content-div {
-    gap: 2.5rem;
+    gap: 2.25rem;
   }
 }
