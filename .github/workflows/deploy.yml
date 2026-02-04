@@ -13,7 +13,7 @@ concurrency:
 
 jobs:
   deploy:
-    name: Deploy to Cloudflare Workers
+    name: Deploy to Cloudflare Worker
     runs-on: ubuntu-latest
     permissions:
       contents: read
