@@ -5,7 +5,7 @@
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
 ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)
-https://github.com/tupletype/greenholts.com/actions/workflows/ci.yml/badge.svg
+[![CI](https://github.com/tupletype/greenholts.com/actions/workflows/ci.yml/badge.svg)](https://github.com/tupletype/greenholts.com/actions/workflows/ci.yml)
 
 # Greenholts.com
 
