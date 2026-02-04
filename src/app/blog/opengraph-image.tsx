@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { ImageResponse } from "next/og";
 import { DATA } from "@/data/resume";
 import { BLOG_CONFIG } from "@/data/blog";

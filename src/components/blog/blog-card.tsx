@@ -58,7 +58,7 @@ export function BlogCard({
           </h2>
           <p className="text-muted-foreground text-xs font-bold">{readTime}</p>
           <p
-            className="text-muted-foreground text-sm line-clamp-5"
+            className="text-muted-foreground line-clamp-5 text-sm"
             title={description}
           >
             {description}

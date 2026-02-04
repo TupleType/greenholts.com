@@ -80,12 +80,7 @@ export function ProjectCard({
       <div className="relative shrink-0">
         <div className="block">
           {image && imageWidth && imageHeight && !image.startsWith("http") ? (
-            <ProjectImage
-              src={image}
-              alt={title}
-              width={414}
-              height={207}
-            />
+            <ProjectImage src={image} alt={title} width={414} height={207} />
           ) : (
             <div className="bg-muted h-48 w-full" />
           )}

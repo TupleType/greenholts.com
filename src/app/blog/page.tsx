@@ -116,7 +116,10 @@ export default async function BlogPage({
             {/* The last word has accent color */}
             <h1 className="text-4xl font-semibold tracking-tighter md:text-5xl">
               {BLOG_CONFIG.pageTitle.split(" ").map((word, index, arr) => (
-                <span key={index} className={index === arr.length - 1 ? "text-blue-accent" : ""}>
+                <span
+                  key={index}
+                  className={index === arr.length - 1 ? "text-blue-accent" : ""}
+                >
                   {word}
                   {index < arr.length - 1 ? " " : ""}
                 </span>
