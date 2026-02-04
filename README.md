@@ -1,13 +1,15 @@
-![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-[![Made With React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
 [![Next.js](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
-![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=github&logoColor=white)
+![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-000?logo=shadcnui&logoColor=fff&style=for-the-badge)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-grey?style=for-the-badge&logo=tailwind-css&logoColor=38B2AC)
 ![License](https://img.shields.io/:license-mit-blue.svg?style=for-the-badge)
-[![Deploy to GitHub Pages](https://github.com/TupleType/greenholts.com/actions/workflows/deploy.yml/badge.svg)](https://github.com/TupleType/greenholts.com/actions/workflows/deploy.yml)
+![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
+![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)
+[![CI](https://github.com/tupletype/greenholts.com/actions/workflows/ci.yml/badge.svg)](https://github.com/tupletype/greenholts.com/actions/workflows/ci.yml)
 
-# My Website
+# Greenholts.com
 
-A responsive portfolio website built with React, featuring my projects, blog posts, and professional information.
+A responsive personal website built with [MagicUI](https://magicui.design/) templates, featuring my portfolio and blog posts.
 
 ## Features
 
@@ -18,13 +20,14 @@ A responsive portfolio website built with React, featuring my projects, blog pos
 - 👨‍💻 Personal portfolio showcase
 - 📝 Blog page
 - 🔀 Custom 404 page
+- ⚙️ Configure by editing [settings files](./src/data)
 
 ## Development
 
 ### Prerequisites
 
 - Node.js
-- npm
+- pnpm
 
 ### Installation
 
@@ -33,35 +36,26 @@ A responsive portfolio website built with React, featuring my projects, blog pos
 git clone https://github.com/yourusername/your-repo-name.git
 
 # Install dependencies
-npm install
+pnpm install
 
 # Start development server
-npm start
+pnpm dev
 ```
 
 ### Update Open Source Projects section
 
-The `git_data_fetcher.mjs` file is used to fetch the Open Source Projects data to `projects.json`.
+The `update-github-stats` script is used to fetch the Open Source Projects data to `github-stats.json`.
 
-Generate an access token with `read:user` permissions and add it to a `.env` file along with your username:
-
-```
-GITHUB_TOKEN = your_token;
-GITHUB_USERNAME = your_username;
-```
-
-Then run
+To update your GitHub stats, you can optionally provide a GitHub token as an environment variable:
 
 ```bash
-node git_data_fetcher.mjs
+export GITHUB_TOKEN=your_token
 ```
 
-### Update Social Preview Images
+Note: The GitHub token is optional. Without it, you'll be subject to lower API rate limits.
 
-To capture social preview images (1280x640):
+Then run:
 
-1. Open Chrome DevTools and click the `Device Toggle Toolbar` button (Ctrl+Shift+M).
-2. Click the `Dimensions` dropdown and select `Edit...`.
-3. Add a custom device with dimensions 1280x640.
-4. Select your new custom device from the `Dimensions` dropdown.
-5. Click the three-dot menu (⋮) in DevTools and select `Capture screenshot`.
+```bash
+pnpm run update-github-stats
+```

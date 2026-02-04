@@ -1,0 +1,33 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "main": ".open-next/worker.js",
+  "name": "greenholts-com",
+  "account_id": "71226d1701d635cdc5b797f22f0b7a78",
+  "compatibility_date": "2026-01-29",
+  // https://opennext.js.org/cloudflare/howtos/keep_names
+  "keep_names": false,
+  "compatibility_flags": [
+    "nodejs_compat",
+    "global_fetch_strictly_public"
+  ],
+  "routes": [
+    {
+      "pattern": "greenholts.com",
+      "custom_domain": true
+    }
+  ],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "observability": {
+    "logs": {
+      "enabled": true,
+      "invocation_logs": true
+    }
+  },
+  // https://opennext.js.org/cloudflare/howtos/image
+  "images": {
+    "binding": "IMAGES",
+  },
+}

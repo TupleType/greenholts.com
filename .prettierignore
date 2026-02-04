@@ -1,7 +1,0 @@
-.github
-images
-node_modules
-build
-dist
-public
-*.json
