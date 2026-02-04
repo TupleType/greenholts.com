@@ -12,9 +12,16 @@
     "lint": "eslint",
     "lint:fix": "eslint --fix",
     "update-github-stats": "tsx scripts/update-github-stats.ts",
+    "build:cf": "opennextjs-cloudflare build",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
     "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
+  },
+  "pnpm": {
+    "overrides": {
+      "@isaacs/brace-expansion": "^5.0.1",
+      "fast-xml-parser": "^5.3.4"
+    }
   },
   "dependencies": {
     "@next/third-parties": "^16.1.4",
