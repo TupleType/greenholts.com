@@ -8,31 +8,33 @@ import { Icons } from "@/components/icons";
 import WorkSection from "@/components/section/work-section";
 import ProjectsSection from "@/components/section/projects-section";
 import TalksSectionDynamic from "@/components/section/talks-section-dynamic";
+import { ProfilePage, WithContext } from "schema-dts";
 
 const BLUR_FADE_DELAY = 0.04;
 
 export default function HomePage() {
-  const jsonLd = {
+  const jsonLd: WithContext<ProfilePage> = {
     "@context": "https://schema.org",
     "@type": "ProfilePage",
-    "mainEntity": {
+    mainEntity: {
       "@type": "Person",
-      "name": DATA.name,
-      "alternateName": DATA.alternateName,
-      "description": DATA.description,
-      "image": `${DATA.url}${DATA.avatarUrl}`,
-      "sameAs": [
+      name: DATA.name,
+      alternateName: DATA.alternateName,
+      description: DATA.description,
+      image: `${DATA.url}${DATA.avatarUrl}`,
+      sameAs: [
         DATA.contact.social.GitHub.url,
         DATA.contact.social.LinkedIn.url,
         DATA.contact.social.X.url,
       ],
-      "jobTitle": DATA.work[0].title,
-      "worksFor": {
+      jobTitle: DATA.work[0].title,
+      worksFor: {
         "@type": "Organization",
-        "name": DATA.work[0].company,
-        "url": DATA.work[0].href,
+        name: DATA.work[0].company,
+        url: DATA.work[0].href,
       },
-      "url": DATA.url,
+      url: DATA.url,
+      knowsAbout: DATA.skills.map((skill) => skill.name),
     },
   };
 

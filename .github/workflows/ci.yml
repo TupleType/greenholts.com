@@ -38,7 +38,7 @@ jobs:
         run: pnpm run lint
 
       - name: Run type check
-        run: pnpm exec tsc --noEmit
+        run: pnpm run typecheck
 
       - name: Build project
         run: pnpm run build:cf
