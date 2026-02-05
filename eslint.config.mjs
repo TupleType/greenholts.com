@@ -19,8 +19,8 @@ const eslintConfig = defineConfig([
     // Default ignores of eslint-config-next:
     ".next/**",
     // Custom ignores:
-    "out/**",
-    "build/**",
+    ".husky/**",
+    ".wrangler/**",
     "next-env.d.ts",
     ".open-next/**",
   ]),

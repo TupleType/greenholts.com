@@ -1,2 +1,2 @@
-pnpm lint:fix 
+pnpm exec eslint --fix --cache  
 pnpm typecheck
