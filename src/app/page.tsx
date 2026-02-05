@@ -8,12 +8,44 @@ import { Icons } from "@/components/icons";
 import WorkSection from "@/components/section/work-section";
 import ProjectsSection from "@/components/section/projects-section";
 import TalksSectionDynamic from "@/components/section/talks-section-dynamic";
+import { ProfilePage, WithContext } from "schema-dts";
 
 const BLUR_FADE_DELAY = 0.04;
 
 export default function HomePage() {
+  const jsonLd: WithContext<ProfilePage> = {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    mainEntity: {
+      "@type": "Person",
+      name: DATA.name,
+      alternateName: DATA.alternateName,
+      description: DATA.description,
+      image: `${DATA.url}${DATA.avatarUrl}`,
+      sameAs: [
+        DATA.contact.social.GitHub.url,
+        DATA.contact.social.LinkedIn.url,
+        DATA.contact.social.X.url,
+      ],
+      jobTitle: DATA.work[0].title,
+      worksFor: {
+        "@type": "Organization",
+        name: DATA.work[0].company,
+        url: DATA.work[0].href,
+      },
+      url: DATA.url,
+      knowsAbout: DATA.skills.map((skill) => skill.name),
+    },
+  };
+
   return (
     <main className="relative flex min-h-dvh flex-col gap-14">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
       <section id="hero">
         <div className="mx-auto w-full max-w-2xl space-y-8 lg:max-w-4xl">
           <div className="flex flex-col justify-between gap-2 gap-y-6 md:flex-row md:items-center">

@@ -1,0 +1,2 @@
+pnpm exec eslint --fix --cache  
+pnpm typecheck

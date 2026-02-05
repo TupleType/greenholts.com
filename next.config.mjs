@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  // Images configuration commented out - Cloudflare Images (cdn-cgi/image) is not available in the free tier
+  // Cloudflare Images (cdn-cgi/image) is not available in the free tier
   // images: {
   //   loader: "custom",
   //   loaderFile: "./imageLoader.ts",
