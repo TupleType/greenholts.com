@@ -121,7 +121,7 @@ export default function HomePage() {
                 size="lg"
               >
                 <Icons.linkedin className="size-4" />
-                Connect with me
+                Let's Connect
               </Button>
             </Link>
           </BlurFade>
