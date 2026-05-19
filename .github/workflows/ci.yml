@@ -13,7 +13,7 @@ concurrency:
 
 jobs:
   ci:
-    name: Lint, Type Check, and Build
+    name: Lint, Type Check, Test and Build
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -40,5 +40,40 @@ jobs:
       - name: Run type check
         run: pnpm run typecheck
 
-      - name: Build project
-        run: pnpm run build:cf
+      - name: Run tests
+        run: pnpm run test
+
+      - name: Install Playwright browsers
+        run: pnpm exec playwright install --with-deps chromium
+
+      - name: Run screenshot tests
+        run: pnpm run test:e2e
+
+      - name: Build and preview
+        run: |
+          pnpm run preview > preview.log 2>&1 &
+          PREVIEW_PID=$!
+          echo "Preview server started with PID: $PREVIEW_PID"
+          SERVER_UP=false
+          for i in $(seq 1 60); do
+            sleep 1
+            echo "Health check attempt $i/60..."
+            if curl -sf http://localhost:8787 > /dev/null 2>&1; then
+              SERVER_UP=true
+              echo "Server is up!"
+              break
+            fi
+            if ! kill -0 $PREVIEW_PID 2>/dev/null; then
+              echo "Preview process died unexpectedly"
+              cat preview.log
+              exit 1
+            fi
+          done
+          kill $PREVIEW_PID 2>/dev/null || true
+          wait $PREVIEW_PID 2>/dev/null || true
+          echo "--- Preview log ---"
+          cat preview.log
+          if [ "$SERVER_UP" = "false" ]; then
+            echo "Server did not respond within 60 seconds"
+            exit 1
+          fi
