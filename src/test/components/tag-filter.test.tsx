@@ -13,7 +13,9 @@ vi.mock("next/navigation", () => ({
 
 // Drawer uses motion animations that don't work in jsdom
 vi.mock("@/components/ui/drawer", () => ({
-  Drawer: ({ children }: { children: React.ReactNode }) => <div>{children}</div>,
+  Drawer: ({ children }: { children: React.ReactNode }) => (
+    <div>{children}</div>
+  ),
   DrawerTrigger: ({
     children,
     ariaLabel,

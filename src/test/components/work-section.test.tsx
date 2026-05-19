@@ -59,9 +59,7 @@ describe("WorkSection", () => {
     const trigger = screen.getByRole("button", { name: /acme corp/i });
     await userEvent.click(trigger);
     expect(trigger).toHaveAttribute("aria-expanded", "true");
-    expect(
-      screen.getByText("Built amazing products at Acme."),
-    ).toBeVisible();
+    expect(screen.getByText("Built amazing products at Acme.")).toBeVisible();
   });
 
   it("collapses an expanded entry when clicked again", async () => {
@@ -90,7 +88,9 @@ describe("WorkSection", () => {
     render(<WorkSection />);
     expect(screen.getByText("Software Engineer")).toBeInTheDocument();
     expect(screen.getByText("Senior Engineer")).toBeInTheDocument();
-    expect(screen.getByText("January 2020 - December 2022")).toBeInTheDocument();
+    expect(
+      screen.getByText("January 2020 - December 2022"),
+    ).toBeInTheDocument();
     expect(screen.getByText("January 2023 - Present")).toBeInTheDocument();
   });
 });
