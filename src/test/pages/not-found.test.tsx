@@ -14,7 +14,10 @@ vi.mock("next/image", () => ({
     alt: string;
     width: number;
     height: number;
-  }) => <img src={src} alt={alt} width={width} height={height} />,
+  }) => (
+    // eslint-disable-next-line @next/next/no-img-element
+    <img src={src} alt={alt} width={width} height={height} />
+  ),
 }));
 
 vi.mock("next/link", () => ({
