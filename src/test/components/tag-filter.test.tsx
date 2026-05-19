@@ -51,7 +51,7 @@ describe("TagFilter", () => {
   it("navigates without tag param when All is clicked", async () => {
     render(<TagFilter tags={tags} selectedTag="Security" />);
     await userEvent.click(screen.getAllByText("All")[0]);
-    expect(mockPush).toHaveBeenCalledWith("/blog?");
+    expect(mockPush).toHaveBeenCalledWith("/blog");
   });
 
   it("highlights the selected tag", () => {
