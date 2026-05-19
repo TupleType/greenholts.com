@@ -113,7 +113,8 @@ export function TagFilter({ tags, selectedTag, tagCounts }: TagFilterProps) {
     if (tag !== "All") {
       params.set("tag", tag);
     }
-    router.push(`${pathname}?${params.toString()}`);
+    const query = params.toString();
+    router.push(query ? `${pathname}?${query}` : pathname);
   };
 
   return (
