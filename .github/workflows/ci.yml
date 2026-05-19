@@ -70,7 +70,7 @@ jobs:
             fi
           done
           kill $PREVIEW_PID 2>/dev/null || true
-          wait $PREVIEW_PID 2>/dev/null
+          wait $PREVIEW_PID 2>/dev/null || true
           echo "--- Preview log ---"
           cat preview.log
           if [ "$SERVER_UP" = "false" ]; then
