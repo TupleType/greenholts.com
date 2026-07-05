@@ -23,7 +23,6 @@ const getGitHubStats = (url: string) => {
 };
 
 export const DATA = {
-  gaId: "G-B53DBKPZ3M",
   name: "Asi Greenholts",
   alternateName: "Asaf Greenholts",
   initials: "AG",
