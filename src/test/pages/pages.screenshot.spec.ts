@@ -8,6 +8,19 @@ const pages = [
 
 for (const { name, path } of pages) {
   test(`${name} page`, async ({ page }) => {
+    // The home page's Talks section embeds YouTube videos via
+    // @next/third-parties/google, which loads the lite-youtube-embed
+    // script/styles from cdn.jsdelivr.net at runtime and then fetches a
+    // thumbnail from i.ytimg.com. Whether those external hosts are
+    // reachable varies by environment (e.g. sandboxed vs CI runners),
+    // which was silently producing a different (styled vs. unstyled)
+    // embed and a consistent screenshot mismatch. Block them so the
+    // embed always renders in its unstyled placeholder state,
+    // independent of network access.
+    await page.route(
+      /^https:\/\/(cdn\.jsdelivr\.net|i\.ytimg\.com|img\.youtube\.com)\//,
+      (route) => route.abort(),
+    );
     await page.goto(path);
     await page.waitForLoadState("networkidle");
     // BlurFade entrance animations are JS-driven (Framer Motion), so they
