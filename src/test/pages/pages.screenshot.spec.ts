@@ -10,6 +10,10 @@ for (const { name, path } of pages) {
   test(`${name} page`, async ({ page }) => {
     await page.goto(path);
     await page.waitForLoadState("networkidle");
+    // BlurFade entrance animations are JS-driven (Framer Motion), so they
+    // aren't paused by Playwright's CSS-animation disabling. Wait for them
+    // to finish so screenshots aren't taken mid-fade.
+    await page.waitForTimeout(1000);
     await expect(page).toHaveScreenshot(`${name}.png`, {
       fullPage: true,
       // The FlickeringGrid in the layout is a canvas-based rAF animation that
