@@ -5,10 +5,21 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { DATA } from "@/data/resume";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
-import { GeistSans } from "geist/font/sans";
-import { GeistMono } from "geist/font/mono";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { FlickeringGrid } from "@/components/magicui/flickering-grid";
+
+const geist = Geist({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  weight: ["400", "500", "600", "700"],
+});
+
+const geistMono = Geist_Mono({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-mono",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(DATA.url),
@@ -57,8 +68,8 @@ export default function RootLayout({
       <body
         className={cn(
           "bg-background relative flex min-h-screen flex-col font-sans antialiased",
-          GeistSans.variable,
-          GeistMono.variable,
+          geist.variable,
+          geistMono.variable,
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="light">
