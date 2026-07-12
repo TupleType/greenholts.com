@@ -94,6 +94,7 @@ export const DATA = {
       logoWidth: 91,
       logoHeight: 65,
       start: "January 2023",
+      end: "July 2026",
       description:
         "Researched CI/CD pipeline security for the development of defensive security solutions. Analyzed real-world CI/CD attacks and explored the use of AI to enhance the security of software development processes.",
     },
