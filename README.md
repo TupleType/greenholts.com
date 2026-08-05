@@ -46,10 +46,13 @@ pnpm dev
 
 ### Screenshot tests
 
-Visual regression tests live in `src/test/pages` and run in CI on every PR. The
-committed baselines under `*-snapshots/` are rendered in an Ubuntu Noble
-container that matches the CI runner, so font anti-aliasing is identical
-locally and in CI.
+Visual regression tests live in `src/test/pages` and run in CI on every PR.
+
+Page height and font rendering differ by ~20px between the bare
+`ubuntu-latest` host and a container, which is what made these tests flap. To
+keep them stable, **both** the committed baselines and the CI job render inside
+the same `mcr.microsoft.com/playwright` image, so the snapshots and CI stay
+pixel-identical. The CI `screenshots` job pins that image via `container:`.
 
 When you intentionally change a page's appearance, regenerate the baselines in
 that same container (requires Docker) and commit the result:
@@ -59,8 +62,8 @@ pnpm run test:e2e:update
 ```
 
 Running Playwright directly on your host (`pnpm test:e2e`) still works for a
-quick local check, but generate the committed baselines via the command above
-so they stay stable in CI.
+quick local check, but the committed baselines **must** be generated via the
+command above — a host-rendered baseline will not match CI.
 
 ### Update Open Source Projects section
 

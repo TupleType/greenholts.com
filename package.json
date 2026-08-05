@@ -11,7 +11,7 @@
     "start": "next start",
     "test": "vitest run",
     "test:e2e": "playwright test",
-    "test:e2e:update": "docker run --rm --ipc=host -v \"$PWD\":/work -w /work mcr.microsoft.com/playwright:v1.60.0-noble sh -c 'corepack enable && pnpm install --frozen-lockfile && pnpm exec playwright test --update-snapshots'",
+    "test:e2e:update": "docker run --rm --ipc=host -e CI=true -v \"$PWD\":/work -v /work/node_modules -v /work/.next -w /work mcr.microsoft.com/playwright:v1.60.0-noble sh -c 'npm i -g pnpm@10 >/dev/null 2>&1 && pnpm install --frozen-lockfile --store-dir /tmp/pnpm-store && pnpm exec playwright test --update-snapshots'",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
     "typecheck": "tsc --noEmit",
