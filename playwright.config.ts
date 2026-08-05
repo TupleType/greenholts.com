@@ -7,6 +7,13 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 1 : 0,
   reporter: process.env.CI ? "github" : "list",
+  expect: {
+    // Allow a tiny fraction of pixels to differ so sub-pixel font
+    // anti-aliasing between environments doesn't fail the whole run.
+    // Baselines are still generated in a CI-matching container (see
+    // `test:e2e:update`) so real visual regressions are caught.
+    toHaveScreenshot: { maxDiffPixelRatio: 0.01 },
+  },
   use: {
     baseURL: "http://localhost:3000",
   },

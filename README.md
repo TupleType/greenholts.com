@@ -44,6 +44,24 @@ pnpm install
 pnpm dev
 ```
 
+### Screenshot tests
+
+Visual regression tests live in `src/test/pages` and run in CI on every PR. The
+committed baselines under `*-snapshots/` are rendered in an Ubuntu Noble
+container that matches the CI runner, so font anti-aliasing is identical
+locally and in CI.
+
+When you intentionally change a page's appearance, regenerate the baselines in
+that same container (requires Docker) and commit the result:
+
+```bash
+pnpm run test:e2e:update
+```
+
+Running Playwright directly on your host (`pnpm test:e2e`) still works for a
+quick local check, but generate the committed baselines via the command above
+so they stay stable in CI.
+
 ### Update Open Source Projects section
 
 The `update-github-stats` script is used to fetch the Open Source Projects data to `github-stats.json`.
