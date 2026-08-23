@@ -70,7 +70,7 @@
     "postcss": "^8.5.23",
     "prettier": "^3.8.1",
     "prettier-plugin-tailwindcss": "^0.7.2",
-    "schema-dts": "^1.1.5",
+    "schema-dts": "^2.0.0",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
     "vitest": "^4.1.6",
