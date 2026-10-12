@@ -87,6 +87,18 @@ export const DATA = {
   },
   work: [
     {
+      company: "Novella.ink",
+      href: "https://novella.ink",
+      title: "Co-Founder",
+      logoUrl: "",
+      logoWidth: 512,
+      logoHeight: 512,
+      start: "July 2026",
+      end: "Present",
+      description:
+        "Co-founded Novella.ink, a bootstrapped B2C startup. Building the product end to end, from idea through launch.",
+    },
+    {
       company: "Palo Alto Networks",
       href: "https://paloaltonetworks.com",
       title: "Sr. Staff Security Researcher",
