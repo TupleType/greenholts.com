@@ -28,9 +28,9 @@ export const DATA = {
   initials: "AG",
   url: "https://greenholts.com",
   description:
-    "Co-Founder of Novella. Security researcher turned founder. I love building things and making sure they are secure. Speaker who thrives on stage.",
+    "Co-Founder of Novella. Security researcher turned builder. I love building things and making sure they are secure. Speaker who thrives on stage.",
   summary:
-    "I've always been curious about computers and how they work, which led to a decade-long career in cybersecurity, most recently researching CI/CD security at Palo Alto Networks. Now I'm co-founding Novella, a bootstrapped startup that turns people's stories into beautifully designed books. I enjoy starting never ending projects and automating things that can be done much faster manually.",
+    "I've always been curious about computers and how they work, which led to a decade-long career in cybersecurity, most recently researching application security at Palo Alto Networks. Now I'm co-founding Novella, a bootstrapped B2C that turns people's stories into beautifully designed books.",
   avatarUrl: "/me.png",
   skillHighlights: [
     "Research software development processes, exploring how they can be attacked and how to protect them.",
