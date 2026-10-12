@@ -4,7 +4,7 @@ import Image from "next/image";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Icons } from "@/components/icons";
+import { BookOpen } from "lucide-react";
 import WorkSection from "@/components/section/work-section";
 import ProjectsSection from "@/components/section/projects-section";
 import TalksSectionDynamic from "@/components/section/talks-section-dynamic";
@@ -112,7 +112,7 @@ export default function HomePage() {
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
             <Link
-              href={DATA.contact.social.LinkedIn.url}
+              href={DATA.work[0].href}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -120,8 +120,8 @@ export default function HomePage() {
                 className="bg-blue-accent text-blue-accent-foreground hover:bg-blue-accent/90 mt-2 gap-2"
                 size="lg"
               >
-                <Icons.linkedin className="size-4" />
-                Let&apos;s Connect
+                <BookOpen className="size-4" />
+                Check out Novella
               </Button>
             </Link>
           </BlurFade>

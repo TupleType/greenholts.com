@@ -94,7 +94,6 @@ export const DATA = {
       logoWidth: 120,
       logoHeight: 120,
       start: "July 2026",
-      end: "Present",
       description:
         "Co-founded Novella, a bootstrapped B2C startup that turns people's stories into beautifully designed, personalized books made to last, gifted for weddings, anniversaries, birthdays and other special occasions.",
     },
